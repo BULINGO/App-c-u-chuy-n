@@ -10,8 +10,8 @@ async def generate_scene_images(
     style: str = "Hoạt hình"
 ) -> List[Dict[str, Any]]:
     """
-    Model Tạo hình ảnh: Sinh hình ảnh minh họa cho từng cảnh trong danh sách cảnh.
-    Duy trì sự nhất quán của nhân vật bằng cách sử dụng ảnh cảnh trước làm tham chiếu.
+    Model Tạo hình ảnh: Sinh hình ảnh minh họa phù hợp cho từng bối cảnh cảnh trong câu chuyện.
+    Duy trì sự nhất quán của nhân vật và bối cảnh.
     """
     updated_scenes = []
     prev_image_url = None
@@ -29,11 +29,13 @@ async def generate_scene_images(
                     style=style,
                     ref_image_url=prev_image_url
                 )
+                if not img_url or "digital illustration for a" in img_url.lower() or "placehold.co" in img_url.lower():
+                    img_url = get_svg_placeholder(scene, style)
             else:
-                img_url = get_svg_placeholder(scene_id, scene.get("description", "Cảnh hoạt hình"))
+                img_url = get_svg_placeholder(scene, style)
         except Exception as e:
             logger.error(f"Lỗi khi tạo ảnh cho Cảnh {scene_id}: {str(e)}")
-            img_url = get_svg_placeholder(scene_id, scene.get("description", "Cảnh minh họa"))
+            img_url = get_svg_placeholder(scene, style)
 
         prev_image_url = img_url
         scene_copy = dict(scene)
@@ -42,24 +44,71 @@ async def generate_scene_images(
 
     return updated_scenes
 
-def get_svg_placeholder(scene_id: int, title: str) -> str:
+def get_svg_placeholder(scene: Dict[str, Any], style: str = "Hoạt hình") -> str:
     """
-    Sinh Data URI ảnh SVG hoạt hình minh họa mẫu đẹp mắt khi không có API key.
+    Sinh Data URI ảnh SVG minh họa hoạt hình trực quan, đẹp mắt, khớp từng bối cảnh và hành động câu chuyện.
     """
     import urllib.parse
-    colors = ["#2878d4", "#48bb78", "#ed8936", "#9f7aea", "#ed64a6"]
-    bg_color = colors[(scene_id - 1) % len(colors)]
+    scene_id = scene.get("scene_id", 1)
+    action = scene.get("action") or scene.get("description") or "Diễn biến câu chuyện"
+    bg_text = scene.get("background") or "Bối cảnh tự nhiên"
+    chars = scene.get("characters") or ["Nhân vật"]
+    char_str = ", ".join(chars) if isinstance(chars, list) else str(chars)
+
+    # Rút gọn text để hiển thị vừa vặn trên ảnh minh họa
+    clean_action = (action[:45] + '...') if len(action) > 45 else action
+    clean_bg = (bg_text[:35] + '...') if len(bg_text) > 35 else bg_text
+
+    # Chọn bảng màu và biểu tượng theo từng cảnh
+    themes = [
+        {"top": "#38bdf8", "bottom": "#4ade80", "accent": "#facc15", "icon": "🐱 🐰 🌲", "title": "Bắt đầu hành trình"},
+        {"top": "#fb923c", "bottom": "#f43f5e", "accent": "#fef08a", "icon": "🌉 🌊 🐾", "title": "Cùng vượt thử thách"},
+        {"top": "#c084fc", "bottom": "#6366f1", "accent": "#f472b6", "icon": "🌅 💖 ✨", "title": "Kỷ niệm đẹp đẽ"},
+        {"top": "#34d399", "bottom": "#059669", "accent": "#fef08a", "icon": "🏰 🌸 🎈", "title": "Khám phá thú vị"},
+        {"top": "#f472b6", "bottom": "#db2777", "accent": "#fde047", "icon": "🎓 📚 🌟", "title": "Bài học ý nghĩa"}
+    ]
     
-    clean_title = (title[:30] + '...') if len(title) > 30 else title
-    
+    theme = themes[(scene_id - 1) % len(themes)]
+
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-      <rect width="600" height="400" fill="{bg_color}" rx="16"/>
-      <circle cx="300" cy="160" r="70" fill="white" opacity="0.2"/>
-      <path d="M 230 280 Q 300 210 370 280" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
-      <circle cx="260" cy="150" r="12" fill="white"/>
-      <circle cx="340" cy="150" r="12" fill="white"/>
-      <text x="300" y="340" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">CẢNH {scene_id}: {clean_title}</text>
+      <defs>
+        <linearGradient id="bgGrad{scene_id}" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="{theme['top']}"/>
+          <stop offset="100%" stop-color="{theme['bottom']}"/>
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+        </filter>
+      </defs>
+
+      <!-- Nền Gradient -->
+      <rect width="600" height="400" fill="url(#bgGrad{scene_id})" rx="16"/>
+
+      <!-- Họa tiết bóng mây / mặt trời -->
+      <circle cx="500" cy="70" r="45" fill="{theme['accent']}" opacity="0.8"/>
+      <circle cx="100" cy="320" r="90" fill="white" opacity="0.15"/>
+      <circle cx="520" cy="340" r="110" fill="white" opacity="0.15"/>
+
+      <!-- Khung thẻ minh họa trung tâm -->
+      <rect x="40" y="50" width="520" height="300" rx="16" fill="white" opacity="0.92" filter="url(#shadow)"/>
+
+      <!-- Tiêu đề Cảnh -->
+      <rect x="60" y="70" width="120" height="32" rx="16" fill="{theme['top']}"/>
+      <text x="120" y="91" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CẢNH {scene_id}</text>
+
+      <!-- Icons bối cảnh -->
+      <text x="300" y="150" font-family="sans-serif" font-size="52" text-anchor="middle">{theme['icon']}</text>
+
+      <!-- Thông tin bối cảnh & Hành động bằng Tiếng Việt -->
+      <text x="300" y="200" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">📍 {clean_bg}</text>
+      <text x="300" y="235" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" fill="#334155" text-anchor="middle">🎭 {clean_action}</text>
+      <text x="300" y="270" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">👥 Nhân vật: {char_str}</text>
+
+      <!-- Chân trang minh họa -->
+      <rect x="40" y="310" width="520" height="40" rx="0" fill="#f8fafc" style="border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;"/>
+      <text x="300" y="335" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0284c7" text-anchor="middle">✨ Tranh minh họa trực quan phong cách {style} ✨</text>
     </svg>"""
-    
+
     encoded_svg = urllib.parse.quote(svg)
     return f"data:image/svg+xml;utf8,{encoded_svg}"
+
