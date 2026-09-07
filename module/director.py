@@ -35,29 +35,80 @@ async def generate_storyboard(
         logger.error(f"Lỗi ở Director module: {str(e)}. Sử dụng kịch bản dự phòng.")
         return get_mock_storyboard(user_input, age_group, art_style)
 
+import re
+
+def extract_characters_from_input(user_input: str) -> list:
+    """
+    Trích xuất tên nhân vật chính xác từ ý tưởng của người dùng.
+    """
+    text = user_input.strip()
+    text_lower = text.lower()
+    
+    ignored = {"Là", "Một", "Có", "Đang", "Và", "Với", "Cho", "Trong", "Không", "Tên", "Tạo", "Chuyện", "Về", "Bé", "Cậu", "Chú", "Cô", "Bạn", "Những", "Hãy", "Khi", "Được"}
+
+    names = []
+    
+    # 1. Tìm từ sau các cụm như "tên là X", "tên X", "cậu bé X", "bạn X"
+    match_name = re.search(r'(?:tên là|tên|cậu bé|bạn|chú|cô|bé)\s+([a-zA-Zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹđ]+)', text, re.IGNORECASE)
+    if match_name:
+        extracted = match_name.group(1).capitalize()
+        if extracted not in ignored and len(extracted) > 1:
+            names.append(extracted)
+
+    # Special check cho Shin hoặc các tên nhân vật quen thuộc
+    if "shin" in text_lower and "Shin" not in names:
+        names.append("Shin")
+
+    # 2. Tìm các từ viết hoa khác trong prompt
+    capitalized = re.findall(r'\b[A-ZĐÊÔỨÁÀẢẠÃẮẰẲẶẴẤẦẨẬẪẾỀỂỆỄỐỒỔỘỖỨỪỬỰỮÍÌỈỊĨỨỪỬỰỮÓÒỎỌÕÚÙỦỤŨÝỲỶẠỸ]\w+\b', text)
+    for cap in capitalized:
+        if cap not in ignored and cap not in names and len(cap) > 1:
+            names.append(cap)
+
+    characters = []
+    if names:
+        for name in names[:2]:
+            characters.append({
+                "name": name,
+                "appearance": f"Nhân vật {name} ngộ nghĩnh, thông minh với trang phục rực rỡ"
+            })
+    else:
+        # Nếu trích xuất theo loài hoặc chức danh
+        if "cậu bé" in text_lower or "bé" in text_lower:
+            characters.append({"name": "Cậu bé", "appearance": "Chú bé nhỏ nhắn, rạng rỡ và thích khám phá"})
+        elif "robot" in text_lower:
+            characters.append({"name": "Robot", "appearance": "Chú Robot thân thiện với ánh mắt đèn LED sáng"})
+        elif "mèo" in text_lower:
+            characters.append({"name": "Chú Mèo", "appearance": "Chú mèo nhỏ lông mượt xinh xắn"})
+        elif "chó" in text_lower:
+            characters.append({"name": "Chú Chó", "appearance": "Chú chó nhỏ lanh lợi, vẫy đuôi vui vẻ"})
+        else:
+            characters.append({"name": "Bạn nhỏ", "appearance": "Nhân vật chính nhân hậu của câu chuyện"})
+
+    return characters
+
 def get_mock_storyboard(user_input: str, age_group: str, art_style: str) -> Dict[str, Any]:
     """
-    Kịch bản mẫu dự phòng khi API chưa được cấu hình hoặc gặp sự cố.
+    Kịch bản mẫu động sinh theo đúng nhân vật và ý tưởng của người dùng.
     """
+    chars = extract_characters_from_input(user_input)
+    main_char_name = chars[0]["name"] if chars else "Bạn nhỏ"
+    
+    # Rút gọn ý tưởng người dùng làm tiêu đề
+    clean_prompt = user_input.strip()
+    title_text = (clean_prompt[:30] + "...") if len(clean_prompt) > 30 else clean_prompt
+
     return {
-        "title": f"Hành Trình Thú Vị: {user_input[:25]}...",
-        "theme": "Tình bạn và tinh thần giúp đỡ lẫn nhau",
-        "characters": [
-            {
-                "name": "Mèo Bông",
-                "appearance": "Chú mèo nhỏ lông trắng muốt, đôi mắt xanh ngọc bích lấp lánh, đeo chiếc nơ đỏ ở cổ"
-            },
-            {
-                "name": "Thỏ Ngọc",
-                "appearance": "Chú thỏ đôi tai dài đáng yêu, mang chiếc balo màu vàng nhỏ nhắn"
-            }
-        ],
-        "setting": "Khu rừng xanh thẫm xinh đẹp rộn rã tiếng chim hót",
-        "story_summary": f"Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng '{user_input}', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-        "moral": "Hãy luôn sẵn lòng mở lòng giúp đỡ bạn bè xung quanh.",
+        "title": f"Câu Chuyện Của {main_char_name}: {title_text}",
+        "theme": "Lòng nhân ái, sự chăm chỉ và tinh thần yêu thiên nhiên",
+        "characters": chars,
+        "setting": f"Bối cảnh sinh động phù hợp với câu chuyện '{clean_prompt}'",
+        "story_summary": f"Câu chuyện xoay quanh {main_char_name} cùng những trải nghiệm ý nghĩa dựa trên ý tưởng '{clean_prompt}'. Qua đó, {main_char_name} đã mang lại niềm vui và học được bài học cuộc sống bổ ích.",
+        "moral": "Hãy luôn chăm chỉ, yêu thương bạn bè và môi trường xung quanh.",
         "storyboard": [
-            "Mèo Bông và Thỏ Ngọc gặp nhau ở bìa rừng và quyết định khởi hành.",
-            "Hai bạn gặp một thử thách nhỏ trên đường đi và cùng nhau vượt qua.",
-            "Cuối cùng cả hai tìm thấy niềm vui và trao nhau nụ cười ấm áp."
+            f"Giới thiệu {main_char_name} và bắt đầu hoạt động '{clean_prompt}'.",
+            f"{main_char_name} kiên trì thực hiện công việc và nhận được sự hỗ trợ đáng yêu.",
+            f"{main_char_name} hoàn thành công việc và gặt hái bài học giáo dục sâu sắc."
         ]
     }
+
