@@ -90,22 +90,11 @@ def create_story_graph():
     builder.add_node("evaluator", evaluator_node)
     builder.add_node("retry_increment", retry_increment_node)
 
-    # Xây dựng luồng di chuyển
+    # Xây dựng luồng di chuyển (Director -> Scene Planner -> Image Generator -> Kết thúc)
     builder.add_edge(START, "director")
     builder.add_edge("director", "scene_planner")
     builder.add_edge("scene_planner", "image_generator")
-    builder.add_edge("image_generator", "evaluator")
-
-    # Đường rẽ nhánh từ Evaluator
-    builder.add_conditional_edges(
-        "evaluator",
-        check_evaluation_result,
-        {
-            "approved": END,
-            "retry": "retry_increment"
-        }
-    )
-    builder.add_edge("retry_increment", "director")
+    builder.add_edge("image_generator", END)
 
     return builder.compile()
 

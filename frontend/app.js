@@ -238,15 +238,6 @@ function renderStoryData(data, style, age) {
         `).join("");
     }
 
-    let evalBadge = "";
-    if (data.evaluation) {
-        evalBadge = `
-            <div style="margin-top: 20px; text-align: center; background: #e0f2fe; padding: 12px; border-radius: 10px; color: #0369a1; font-weight: 600; font-size: 14px;">
-                🛡️ AI Evaluator: ${data.evaluation.feedback || 'Nội dung đạt chuẩn an toàn & nhân văn cho học sinh tiểu học'} (Score: ${data.evaluation.score || 9}/10)
-            </div>
-        `;
-    }
-
     storyOutput.innerHTML = `
         <div class="story-header-card">
             <h3>📚 ${data.title || 'Câu chuyện AI'}</h3>
@@ -288,8 +279,6 @@ function renderStoryData(data, style, age) {
         <div class="scenes-container">
             ${scenesHtml}
         </div>
-
-        ${evalBadge}
     `;
 }
 
