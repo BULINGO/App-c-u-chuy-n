@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Kể Chuyện - HARNESS AI AGENTIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" onclick="showCreateSection()">📚 AI Kể Chuyện</div>
+
+        <nav>
+            <a id="navHome" class="active" onclick="showCreateSection()">Trang chủ</a>
+            <a id="navLibrary" onclick="showLibrarySection()">Thư viện truyện</a>
+            <a id="navMyStories" onclick="showLibrarySection()">Truyện của tôi</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h1>Xin chào! 👋</h1>
+            <p>Hãy cùng hệ thống Agentic AI tạo ra một câu chuyện thật thú vị nhé!</p>
+        </div>
+
+        <!-- 3 chức năng chính -->
+        <div class="cards">
+
+            <div class="card" onclick="scrollToCreate()">
+                <div class="icon">✨</div>
+                <h3>Tạo truyện bằng AI</h3>
+                <p>Nhập ý tưởng và để AI Agentic điều phối kịch bản & tạo hình ảnh.</p>
+            </div>
+
+            <div class="card" onclick="scrollToCreate()">
+                <div class="icon">📖</div>
+                <h3>Kể câu chuyện</h3>
+                <p>Nhập câu chuyện có sẵn và biến nó thành câu chuyện trực quan.</p>
+            </div>
+
+            <div class="card" onclick="showLibrarySection()">
+                <div class="icon">🎨</div>
+                <h3>Thư viện truyện</h3>
+                <p>Xem toàn bộ những câu chuyện đã được AI sáng tạo.</p>
+            </div>
+
+        </div>
+
+        <!-- Khu vực 1: Tạo truyện -->
+        <div class="story-box" id="createSection">
+
+            <h2>✨ Tạo câu chuyện</h2>
+
+            <p style="margin-bottom: 10px; color: #475569;">
+                Hãy nhập ý tưởng hoặc nội dung câu chuyện:
+            </p>
+
+            <textarea id="storyInput" placeholder="Ví dụ: Một chú mèo nhỏ dũng cảm giúp đỡ bạn bè vượt qua dòng suối nhỏ trong khu rừng..."></textarea>
+
+            <div class="options">
+
+                <select id="age">
+                    <option>Lớp 1 - 2</option>
+                    <option>Lớp 3 - 4</option>
+                    <option>Lớp 5</option>
+                </select>
+
+                <select id="style">
+                    <option>Hoạt hình</option>
+                    <option>Dễ thương</option>
+                    <option>Cổ tích</option>
+                </select>
+
+                <select id="voice">
+                    <option value="female">🔊 Giọng Nữ truyền cảm</option>
+                    <option value="male">🔊 Giọng Nam ấm áp</option>
+                </select>
+
+            </div>
+
+
+            <button class="btn-submit" onclick="createStory()">✨ Tạo câu chuyện với AI Agentic</button>
+
+            <!-- Khu vực hiển thị kết quả -->
+            <div id="result">
+                <!-- Loading State -->
+                <div id="loadingBox" class="loading-box">
+                    <div class="spinner"></div>
+                    <h3 style="color: #2878d4; margin-bottom: 8px;">Hệ thống Agentic AI đang làm việc...</h3>
+                    <p style="color: #64748b; font-size: 14px;">Vui lòng chờ trong giây lát. Đạo diễn & Qwen Image 3 Pro đang sáng tạo câu chuyện.</p>
+                    
+                    <div class="status-steps">
+                        <span class="step-badge active">🧠 Director Agent</span>
+                        <span class="step-badge active">🎬 Scene Planner</span>
+                        <span class="step-badge active">🎨 Qwen Image Pro</span>
+                        <span class="step-badge active">🛡️ Evaluator</span>
+                    </div>
+                </div>
+
+                <!-- Story Output Area -->
+                <div id="storyOutput" style="display: none;"></div>
+            </div>
+
+        </div>
+
+        <!-- Khu vực 2: Thư viện truyện (Lịch sử câu chuyện đã lưu) -->
+        <div class="library-section" id="librarySection" style="display: none;">
+            <h2>
+                <span>🎨 Thư viện câu chuyện đã tạo</span>
+                <button onclick="loadStoryHistory()" style="font-size: 13px; padding: 6px 12px; border-radius: 6px; background: #e2e8f0; color: #334155; border: none; cursor: pointer;">
+                    🔄 Làm mới
+                </button>
+            </h2>
+
+            <div id="libraryContent">
+                <div class="library-grid" id="libraryGrid">
+                    <!-- Danh sách thẻ truyện sẽ được load bằng JS -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

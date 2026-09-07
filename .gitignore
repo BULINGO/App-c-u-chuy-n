@@ -1,0 +1,35 @@
+# Environment variables (chứa API Key - BẢO MẬT)
+.env
+.env.local
+.env.*
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Môi trường ảo (Virtual Environments)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dữ liệu âm thanh phát sinh (TTS Audio)
+data/audio/*.mp3
+data/audio/*.wav
+
+# System & Log files
+*.log
+.DS_Store
+Thumbs.db
+
+# Scratch files
+backend/chay

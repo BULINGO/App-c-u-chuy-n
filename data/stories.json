@@ -1,0 +1,75 @@
+[
+  {
+    "id": "dad5d3d9",
+    "created_at": "2026-08-17 19:30:31",
+    "user_input": "một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây",
+    "age": "Lớp 1 - 2",
+    "style": "Cổ tích",
+    "title": "Hành Trình Thú Vị: một chú mèo nhỏ đang chạy...",
+    "theme": "Tình bạn và tinh thần giúp đỡ lẫn nhau",
+    "characters": [
+      {
+        "name": "Mèo Bông",
+        "appearance": "Chú mèo nhỏ lông trắng muốt, đôi mắt xanh ngọc bích lấp lánh, đeo chiếc nơ đỏ ở cổ"
+      },
+      {
+        "name": "Thỏ Ngọc",
+        "appearance": "Chú thỏ đôi tai dài đáng yêu, mang chiếc balo màu vàng nhỏ nhắn"
+      }
+    ],
+    "setting": "Khu rừng xanh thẫm xinh đẹp rộn rã tiếng chim hót",
+    "story_summary": "Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
+    "moral": "Hãy luôn sẵn lòng mở lòng giúp đỡ bạn bè xung quanh.",
+    "storyboard": [
+      "Mèo Bông và Thỏ Ngọc gặp nhau ở bìa rừng và quyết định khởi hành.",
+      "Hai bạn gặp một thử thách nhỏ trên đường đi và cùng nhau vượt qua.",
+      "Cuối cùng cả hai tìm thấy niềm vui và trao nhau nụ cười ấm áp."
+    ],
+    "scenes": [
+      {
+        "scene_id": 1,
+        "description": "Giới thiệu nhân vật và khởi đầu buổi sáng tươi đẹp tại bìa rừng.",
+        "characters": [
+          "Mèo Bông",
+          "Thỏ Ngọc"
+        ],
+        "background": "Khu rừng rực rỡ nắng mai với hoa thảm cỏ xanh mướt.",
+        "action": "Mèo Bông mỉm cười vẫy tay chào Thỏ Ngọc đang đeo chiếc balo vàng.",
+        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Hành Trình Thú Vị: một chú mèo nhỏ đang chạy...'. Hôm nay là một ngày nắng đẹp trời!",
+        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat with blue eyes and red ribbon next to a cute bunny with yellow backpack.\nAction & Scene: Waving hands cheerfully at each other under bright morning sunlight.\nBackground: Beautiful enchanted forest with green grass and colorful blooming flowers.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
+        "image_url": "https://placehold.co/600x400/e2e8f0/1e293b?text=\nDigital illustration for a ch"
+      },
+      {
+        "scene_id": 2,
+        "description": "Hai bạn cùng nhau đối mặt với thử thách và hỗ trợ lẫn nhau.",
+        "characters": [
+          "Mèo Bông",
+          "Thỏ Ngọc"
+        ],
+        "background": "Cây cầu gỗ nhỏ bắc qua dòng stream trong veo.",
+        "action": "Thỏ Ngọc cẩn thận chìa tay dắt Mèo Bông qua dòng suối nhỏ.",
+        "narration": "Trên đường đi, cả hai cùng dắt tay nhau vượt qua dòng suối mát lành.",
+        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat holding hands with a cute bunny.\nAction & Scene: Crossing a small wooden bridge over a sparkling clear stream together carefully.\nBackground: Sunny forest stream with shiny pebbles and jumping butterflies.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
+        "image_url": "https://placehold.co/600x400/e2e8f0/1e293b?text=\nDigital illustration for a ch"
+      },
+      {
+        "scene_id": 3,
+        "description": "Kết thúc hành trình vui vẻ và bài học ý nghĩa.",
+        "characters": [
+          "Mèo Bông",
+          "Thỏ Ngọc"
+        ],
+        "background": "Đồi cỏ hoa rực rỡ nắng chiều hoàng hôn êm đềm.",
+        "action": "Hai bạn ngồi cạnh nhau ngắm hoàng hôn và mỉm cười hạnh phúc.",
+        "narration": "Hành trình khép lại thật êm đềm. Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
+        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat and cute bunny sitting side by side.\nAction & Scene: Watching beautiful warm sunset sky and smiling happily together.\nBackground: Grassy hill with soft golden sunset light and warm cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
+        "image_url": "https://placehold.co/600x400/e2e8f0/1e293b?text=\nDigital illustration for a ch"
+      }
+    ],
+    "evaluation": {
+      "approved": true,
+      "feedback": "Đã phê duyệt mặc định do không thể kết nối Evaluator API.",
+      "score": 8
+    }
+  }
+]
