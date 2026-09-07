@@ -5,13 +5,34 @@ from backend.services.openrouter import openrouter_service
 
 logger = logging.getLogger("image_generator_module")
 
+import random
+import urllib.parse
+
+def generate_pollinations_image_url(scene: Dict[str, Any], style: str = "Hoạt hình") -> str:
+    """
+    Sinh URL ảnh AI nghệ thuật thực tế sinh động 100% từ Pollinations AI Engine.
+    Tự động dựng prompt chi tiết mô tả rõ nhân vật, hành động và bối cảnh.
+    """
+    action = scene.get("action") or scene.get("description") or "doing fun activity"
+    background = scene.get("background") or "sunny outdoor background"
+    chars = scene.get("characters") or ["cute character"]
+    char_str = ", ".join(chars) if isinstance(chars, list) else str(chars)
+
+    # Prompt tiếng Anh chuẩn cho AI Image Generator (Flux/Stable Diffusion)
+    prompt = f"Vivid 3D Disney Pixar animated movie scene, cute character {char_str}, {action}, {background}, vibrant pastel colors, masterpiece, 8k resolution, children storybook illustration"
+
+    clean_prompt = prompt.replace("\n", " ").strip()
+    encoded_prompt = urllib.parse.quote(clean_prompt)
+    seed = random.randint(1000, 99999)
+
+    return f"https://image.pollinations.ai/prompt/{encoded_prompt}?width=800&height=500&nologo=true&seed={seed}"
+
 async def generate_scene_images(
     scenes: List[Dict[str, Any]],
     style: str = "Hoạt hình"
 ) -> List[Dict[str, Any]]:
     """
-    Model Tạo hình ảnh: Sinh hình ảnh minh họa phù hợp cho từng bối cảnh cảnh trong câu chuyện.
-    Duy trì sự nhất quán của nhân vật và bối cảnh.
+    Model Tạo hình ảnh: Sinh hình ảnh AI thật nghệ thuật minh họa cho từng cảnh.
     """
     updated_scenes = []
     prev_image_url = None
@@ -20,8 +41,9 @@ async def generate_scene_images(
         scene_id = scene.get("scene_id", idx + 1)
         image_prompt = scene.get("image_prompt", f"Illustration for scene {scene_id}")
 
-        logger.info(f"Đang sinh hình ảnh cho Cảnh {scene_id}...")
+        logger.info(f"Đang sinh hình ảnh AI nghệ thuật cho Cảnh {scene_id}...")
 
+        img_url = None
         try:
             if openrouter_service.is_configured():
                 img_url = await openrouter_service.generate_image(
@@ -30,11 +52,14 @@ async def generate_scene_images(
                     ref_image_url=prev_image_url
                 )
                 if not img_url or "digital illustration for a" in img_url.lower() or "placehold.co" in img_url.lower():
-                    img_url = get_svg_placeholder(scene, style)
+                    img_url = generate_pollinations_image_url(scene, style)
             else:
-                img_url = get_svg_placeholder(scene, style)
+                img_url = generate_pollinations_image_url(scene, style)
         except Exception as e:
-            logger.error(f"Lỗi khi tạo ảnh cho Cảnh {scene_id}: {str(e)}")
+            logger.error(f"Lỗi khi gọi OpenRouter Image API: {str(e)}. Chuyển sang Pollinations AI sinh ảnh thật.")
+            img_url = generate_pollinations_image_url(scene, style)
+
+        if not img_url:
             img_url = get_svg_placeholder(scene, style)
 
         prev_image_url = img_url
