@@ -5,6 +5,14 @@ let isPlayingFullStory = false;
 let speechRate = 1.0;
 let currentStoryData = null;
 
+// Khởi tạo trước danh sách giọng đọc của trình duyệt
+if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.getVoices();
+    };
+}
+
+
 function showCreateSection() {
     document.getElementById("createSection").style.display = "block";
     document.getElementById("librarySection").style.display = "none";
@@ -369,9 +377,24 @@ function speakTextBrowser(text, sceneIdx) {
     utterance.lang = 'vi-VN';
     utterance.rate = speechRate;
 
+    // Lọc và chọn đúng giọng Tiếng Việt chuẩn trong danh sách giọng của trình duyệt
+    const voices = window.speechSynthesis.getVoices();
+    const viVoice = voices.find(v => 
+        v.lang.toLowerCase().includes('vi') || 
+        v.lang.toLowerCase().includes('vn') || 
+        v.name.toLowerCase().includes('vietnam') ||
+        v.name.toLowerCase().includes('hoaimy') ||
+        v.name.toLowerCase().includes('namminh')
+    );
+
+    if (viVoice) {
+        utterance.voice = viVoice;
+    }
+
     utterance.onstart = () => {
         updateAudioUI(true, `Đang đọc Cảnh ${sceneIdx + 1} (Browser Voice)...`);
     };
+
 
     utterance.onend = () => {
         onSceneAudioEnded(sceneIdx);

@@ -9,11 +9,15 @@ logger = logging.getLogger("audio_generator")
 AUDIO_DIR = os.path.join("data", "audio")
 os.makedirs(AUDIO_DIR, exist_ok=True)
 
-# Edge-TTS voice mapping
+# Edge-TTS voice mapping (Giọng Tiếng Việt chuẩn Neural)
 VOICES = {
     "nữ": "vi-VN-HoaiMyNeural",
-    "nam": "vi-VN-NamMinhNeural"
+    "female": "vi-VN-HoaiMyNeural",
+    "nu": "vi-VN-HoaiMyNeural",
+    "nam": "vi-VN-NamMinhNeural",
+    "male": "vi-VN-NamMinhNeural"
 }
+
 
 async def generate_tts_file(text: str, voice_type: str = "nữ", custom_id: Optional[str] = None) -> Optional[str]:
     """
