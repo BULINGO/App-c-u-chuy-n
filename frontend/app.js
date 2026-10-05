@@ -1,9 +1,12 @@
-// --- BIẾN TOÀN CỤC PHÁT ÂM THANH ---
+// --- BIẾN TOÀN CỤC PHÁT ÂM THANH & BẢO MẬT ---
 let currentAudioObject = null;
 let currentPlayingSceneIndex = -1;
 let isPlayingFullStory = false;
 let speechRate = 1.0;
 let currentStoryData = null;
+
+// Trạng thái mở khóa Truyện của tôi (Mật khẩu: 123456)
+let isMyStoriesUnlocked = false;
 
 // Khởi tạo trước danh sách giọng đọc của trình duyệt
 if ('speechSynthesis' in window) {
@@ -12,10 +15,34 @@ if ('speechSynthesis' in window) {
     };
 }
 
+// Điền mẫu gợi ý nhanh vào ô nhập truyện
+function fillTemplate(type) {
+    const input = document.getElementById("storyInput");
+    const styleSelect = document.getElementById("style");
+    if (!input) return;
+    
+    if (type === 'scenes') {
+        input.value = "Cảnh 1: Bé Na tìm thấy chú mèo con lông vàng bị ướt sũng dưới gốc cây bàng trong cơn mưa rào.\nCảnh 2: Bé Na ân cần mang mèo về nhà sưởi ấm, lau khô lông và cho uống một bát sữa ấm thơm lừng.\nCảnh 3: Sáng hôm sau mèo con khỏe mạnh, vui vẻ vờn cuộn len cùng Bé Na và trở thành người bạn thân thiết.";
+        if (styleSelect) styleSelect.value = "Hoạt hình";
+    } else if (type === 'fantasy') {
+        input.value = "Cảnh 1: Bé Bo nhặt được một viên ngọc phát sáng lung linh rơi từ bầu trời đêm xuống khu vườn kỳ diệu.\nCảnh 2: Viên ngọc biến thành một chú kỳ lân nhỏ có cánh lấp lánh, cùng Bo bay qua đám mây ngũ sắc để tìm đường về vương quốc ánh sao.\nCảnh 3: Chú kỳ lân tặng Bo chiếc lông vũ ước nguyện rồi bay về bầu trời diệu kỳ, Bo mỉm cười hạnh phúc bên người bạn kỳ ảo.";
+        if (styleSelect) styleSelect.value = "Kỳ ảo";
+    } else if (type === 'friendship') {
+        input.value = "Kể về bạn Rùa và Thỏ cùng nhau đoàn kết giúp đỡ các bạn thú nhỏ vượt qua dòng suối sau cơn mưa lớn trong khu rừng xanh.";
+        if (styleSelect) styleSelect.value = "Dễ thương";
+    } else if (type === 'adventure') {
+        input.value = "Cảnh 1: Chú cún Bông tìm thấy một chiếc chìa khóa lấp lánh trong khu vườn hoa rực rỡ.\nCảnh 2: Bông cùng bạn Mèo Miu tìm kiếm và mở được chiếc rương kho báu chứa đầy hạt giống hoa diệu kỳ.\nCảnh 3: Cả hai cùng gieo hạt, khu vườn nở rộ muôn sắc màu đem lại niềm vui cho cả xóm nhỏ.";
+        if (styleSelect) styleSelect.value = "Cổ tích";
+    }
+    input.focus();
+}
+
+// ================= ĐIỀU HƯỚNG CÁC TRANG =================
 
 function showCreateSection() {
     document.getElementById("createSection").style.display = "block";
     document.getElementById("librarySection").style.display = "none";
+    document.getElementById("myStoriesSection").style.display = "none";
     
     document.getElementById("navHome").classList.add("active");
     document.getElementById("navLibrary").classList.remove("active");
@@ -27,12 +54,30 @@ function showCreateSection() {
 function showLibrarySection() {
     document.getElementById("createSection").style.display = "none";
     document.getElementById("librarySection").style.display = "block";
+    document.getElementById("myStoriesSection").style.display = "none";
     
     document.getElementById("navHome").classList.remove("active");
     document.getElementById("navLibrary").classList.add("active");
-    document.getElementById("navMyStories").classList.add("active");
+    document.getElementById("navMyStories").classList.remove("active");
     
     loadStoryHistory();
+}
+
+function showMyStoriesSection() {
+    if (!isMyStoriesUnlocked) {
+        openSecurityModal();
+        return;
+    }
+
+    document.getElementById("createSection").style.display = "none";
+    document.getElementById("librarySection").style.display = "none";
+    document.getElementById("myStoriesSection").style.display = "block";
+    
+    document.getElementById("navHome").classList.remove("active");
+    document.getElementById("navLibrary").classList.remove("active");
+    document.getElementById("navMyStories").classList.add("active");
+    
+    loadMyStories();
 }
 
 function scrollToCreate() {
@@ -41,19 +86,102 @@ function scrollToCreate() {
     });
 }
 
+// ================= MODAL MẬT KHẨU (123456) =================
+
+function openSecurityModal() {
+    const modal = document.getElementById("securityModal");
+    const errorBox = document.getElementById("securityModalError");
+    const pwdInput = document.getElementById("securityPasswordInput");
+
+    errorBox.style.display = "none";
+    errorBox.innerText = "";
+    pwdInput.value = "";
+
+    modal.style.display = "flex";
+    setTimeout(() => {
+        pwdInput.focus();
+    }, 100);
+}
+
+function closeSecurityModal() {
+    document.getElementById("securityModal").style.display = "none";
+}
+
+async function submitSecurityModal() {
+    const pwdInput = document.getElementById("securityPasswordInput").value.trim();
+    const errorBox = document.getElementById("securityModalError");
+    errorBox.style.display = "none";
+
+    if (!pwdInput) {
+        errorBox.innerText = "Vui lòng nhập mật khẩu!";
+        errorBox.style.display = "block";
+        return;
+    }
+
+    // Kiểm tra nhanh trực tiếp 123456 hoặc qua API backend
+    if (pwdInput === "123456") {
+        isMyStoriesUnlocked = true;
+        closeSecurityModal();
+        showMyStoriesSection();
+        return;
+    }
+
+    try {
+        const res = await fetch("/api/story/auth/verify", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ password: pwdInput })
+        });
+        const data = await res.json();
+
+        if (data.success) {
+            isMyStoriesUnlocked = true;
+            closeSecurityModal();
+            showMyStoriesSection();
+        } else {
+            errorBox.innerText = "Mật khẩu không đúng. Vui lòng nhập lại!";
+            errorBox.style.display = "block";
+        }
+    } catch (err) {
+        // Fallback kiểm tra client nếu mất mạng
+        if (pwdInput === "123456") {
+            isMyStoriesUnlocked = true;
+            closeSecurityModal();
+            showMyStoriesSection();
+        } else {
+            errorBox.innerText = "Mật khẩu không chính xác!";
+            errorBox.style.display = "block";
+        }
+    }
+}
+
+// Nhấn Enter để gửi mật khẩu
+document.getElementById("securityPasswordInput")?.addEventListener("keyup", function (e) {
+    if (e.key === "Enter") {
+        submitSecurityModal();
+    }
+});
+
+function lockMyStories() {
+    isMyStoriesUnlocked = false;
+    showLibrarySection();
+}
+
+// ================= TẠO CÂU CHUYỆN AI =================
+
 async function createStory() {
     let storyInput = document.getElementById("storyInput").value.trim();
     let age = document.getElementById("age").value;
     let style = document.getElementById("style").value;
     let voiceSelect = document.getElementById("voice");
     let voice = voiceSelect ? voiceSelect.value : "female";
+    let isPrivate = document.getElementById("storyIsPrivate").checked;
 
     if (storyInput === "") {
         alert("Bạn hãy nhập ý tưởng câu chuyện trước nhé!");
         return;
     }
 
-    // Hiển thị phần kết quả & loading
     let resultBox = document.getElementById("result");
     let loadingBox = document.getElementById("loadingBox");
     let storyOutput = document.getElementById("storyOutput");
@@ -64,10 +192,7 @@ async function createStory() {
     storyOutput.style.display = "none";
     btnSubmit.disabled = true;
 
-    // Dừng âm thanh cũ nếu có
     stopAudio();
-
-    // Cuộn xuống khu vực kết quả
     resultBox.scrollIntoView({ behavior: "smooth" });
 
     try {
@@ -80,7 +205,8 @@ async function createStory() {
                 prompt: storyInput,
                 age: age,
                 style: style,
-                voice: voice
+                voice: voice,
+                is_private: isPrivate
             })
         });
 
@@ -117,6 +243,8 @@ async function createStory() {
     }
 }
 
+// ================= TẢI THƯ VIỆN CÔNG KHAI =================
+
 async function loadStoryHistory() {
     let grid = document.getElementById("libraryGrid");
     grid.innerHTML = `<p style="color: #64748b; padding: 20px; text-align: center;">Đang tải danh sách câu chuyện...</p>`;
@@ -130,7 +258,7 @@ async function loadStoryHistory() {
                 <div style="grid-column: 1 / -1; text-align: center; padding: 40px 20px; background: #f8fafc; border-radius: 12px; color: #64748b;">
                     <div style="font-size: 40px; margin-bottom: 10px;">📖</div>
                     <h3>Chưa có câu chuyện nào trong Thư viện</h3>
-                    <p style="font-size: 14px; margin-top: 5px;">Hãy nhập ý tưởng và tạo câu chuyện đầu tiên bằng AI!</p>
+                    <p style="font-size: 14px; margin-top: 5px;">Hãy tạo câu chuyện mới bằng AI!</p>
                     <button onclick="showCreateSection()" style="margin-top: 15px; background: #2878d4; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">
                         ✨ Tạo câu chuyện mới
                     </button>
@@ -157,7 +285,7 @@ async function loadStoryHistory() {
                     </div>
                     <div class="library-actions">
                         <button class="btn-view-story" onclick="viewStoryDetail('${story.id}')">📖 Xem lại</button>
-                        <button class="btn-delete-story" onclick="deleteStory('${story.id}')">🗑️ Xóa</button>
+                        <button class="btn-delete-story" onclick="deleteStory('${story.id}', 'public')">🗑️ Xóa</button>
                     </div>
                 </div>
             `;
@@ -167,6 +295,61 @@ async function loadStoryHistory() {
         grid.innerHTML = `<p style="color: #dc2626; text-align: center; padding: 20px;">Lỗi tải thư viện: ${err.message}</p>`;
     }
 }
+
+// ================= TẢI TRUYỆN CỦA TÔI =================
+
+async function loadMyStories() {
+    let grid = document.getElementById("myStoriesGrid");
+    grid.innerHTML = `<p style="color: #64748b; padding: 20px; text-align: center;">Đang tải danh sách Truyện của tôi...</p>`;
+
+    try {
+        const response = await fetch("/api/story/my-stories");
+        const resData = await response.json();
+
+        if (!resData.success || !resData.data || resData.data.length === 0) {
+            grid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 40px 20px; background: #f8fafc; border-radius: 12px; color: #64748b;">
+                    <div style="font-size: 40px; margin-bottom: 10px;">📖</div>
+                    <h3>Chưa có câu chuyện nào trong Truyện của tôi</h3>
+                    <p style="font-size: 14px; margin-top: 5px;">Khi tạo câu chuyện, hãy tích chọn <b>Lưu vào Truyện của tôi</b> để lưu vào đây.</p>
+                    <button onclick="showCreateSection()" style="margin-top: 15px; background: #2878d4; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">
+                        ✨ Tạo câu chuyện mới
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        grid.innerHTML = resData.data.map(story => {
+            let thumbUrl = "https://placehold.co/600x400/2878d4/ffffff?text=Truyen+Cua+Toi";
+            if (story.scenes && story.scenes.length > 0 && story.scenes[0].image_url) {
+                thumbUrl = story.scenes[0].image_url;
+            }
+
+            return `
+                <div class="library-card">
+                    <div class="library-thumb">
+                        <img src="${thumbUrl}" alt="${story.title}" loading="lazy" onerror="this.src='https://placehold.co/600x400/2878d4/ffffff?text=Truyen+AI'">
+                    </div>
+                    <div class="library-body">
+                        <div class="library-title">${story.title}</div>
+                        <div class="library-summary">${story.story_summary || story.user_input}</div>
+                        <div class="library-date">🕒 ${story.created_at || 'Mới đây'} | 🎓 ${story.age || 'Tiểu học'}</div>
+                    </div>
+                    <div class="library-actions">
+                        <button class="btn-view-story" onclick="viewStoryDetail('${story.id}')">📖 Xem lại</button>
+                        <button class="btn-delete-story" onclick="deleteStory('${story.id}', 'private')">🗑️ Xóa</button>
+                    </div>
+                </div>
+            `;
+        }).join("");
+
+    } catch (err) {
+        grid.innerHTML = `<p style="color: #dc2626; text-align: center; padding: 20px;">Lỗi tải truyện: ${err.message}</p>`;
+    }
+}
+
+// ================= THAO TÁC XEM & XÓA TRUYỆN =================
 
 async function viewStoryDetail(storyId) {
     try {
@@ -185,15 +368,19 @@ async function viewStoryDetail(storyId) {
     }
 }
 
-async function deleteStory(storyId) {
-    if (!confirm("Bạn có chắc chắn muốn xóa câu chuyện này khỏi Thư viện?")) return;
+async function deleteStory(storyId, fromSection) {
+    if (!confirm("Bạn có chắc chắn muốn xóa câu chuyện này?")) return;
 
     try {
         const response = await fetch(`/api/story/delete/${storyId}`, { method: "DELETE" });
         const resData = await response.json();
 
         if (resData.success) {
-            loadStoryHistory();
+            if (fromSection === 'private') {
+                loadMyStories();
+            } else {
+                loadStoryHistory();
+            }
         } else {
             alert(resData.detail || "Không thể xóa câu chuyện!");
         }
@@ -202,7 +389,10 @@ async function deleteStory(storyId) {
     }
 }
 
+// ================= RENDER DỮ LIỆU CÂU CHUYỆN =================
+
 function renderStoryData(data, style, age) {
+    stopAudio();
     currentStoryData = data;
     let storyOutput = document.getElementById("storyOutput");
     storyOutput.style.display = "block";
@@ -282,7 +472,7 @@ function renderStoryData(data, style, age) {
     `;
 }
 
-// --- LOGIC PHÁT ÂM THANH GIỌNG ĐỌC ---
+// ================= LOGIC PHÁT ÂM THANH GIỌNG ĐỌC =================
 
 function changeAudioSpeed(val) {
     speechRate = parseFloat(val);
@@ -307,7 +497,6 @@ function playSceneAudio(sceneIdx) {
         return;
     }
 
-    // Nếu đang phát chính cảnh này -> Tạm dừng/Phát tiếp
     if (currentPlayingSceneIndex === sceneIdx && currentAudioObject) {
         if (currentAudioObject.paused) {
             currentAudioObject.play();
@@ -319,21 +508,18 @@ function playSceneAudio(sceneIdx) {
         return;
     }
 
-    // Dừng âm thanh trước đó
     stopAudioStateOnly();
 
     currentPlayingSceneIndex = sceneIdx;
     let scene = currentStoryData.scenes[sceneIdx];
     let narrationText = scene.narration || scene.description || "";
 
-    // Scroll cảnh đang đọc vào màn hình
     let cardEl = document.getElementById(`sceneCard_${sceneIdx}`);
     if (cardEl) {
         cardEl.scrollIntoView({ behavior: "smooth", block: "center" });
         cardEl.classList.add("active-narration");
     }
 
-    // Nếu có audio_url từ server (Edge-TTS / gTTS)
     if (scene.audio_url) {
         currentAudioObject = new Audio(scene.audio_url);
         currentAudioObject.playbackRate = speechRate;
@@ -349,7 +535,6 @@ function playSceneAudio(sceneIdx) {
             onSceneAudioEnded(sceneIdx);
         };
     } else {
-        // Fallback: Web Speech API của trình duyệt
         speakTextBrowser(narrationText, sceneIdx);
     }
 }
@@ -366,7 +551,6 @@ function speakTextBrowser(text, sceneIdx) {
     utterance.lang = 'vi-VN';
     utterance.rate = speechRate;
 
-    // Lọc và chọn đúng giọng Tiếng Việt chuẩn trong danh sách giọng của trình duyệt
     const voices = window.speechSynthesis.getVoices();
     const viVoice = voices.find(v => 
         v.lang.toLowerCase().includes('vi') || 
@@ -383,7 +567,6 @@ function speakTextBrowser(text, sceneIdx) {
     utterance.onstart = () => {
         updateAudioUI(true, `Đang đọc Cảnh ${sceneIdx + 1} (Browser Voice)...`);
     };
-
 
     utterance.onend = () => {
         onSceneAudioEnded(sceneIdx);
@@ -404,12 +587,10 @@ function onSceneAudioEnded(sceneIdx) {
     }
 
     if (isPlayingFullStory && currentStoryData && sceneIdx + 1 < currentStoryData.scenes.length) {
-        // Tự động phát cảnh tiếp theo
         setTimeout(() => {
             playSceneAudio(sceneIdx + 1);
         }, 500);
     } else {
-        // Hoàn thành đọc toàn bộ
         stopAudio();
         let statusText = document.getElementById("audioStatusText");
         if (statusText) statusText.innerText = "Đã hoàn thành đọc câu chuyện 🎉";
@@ -436,7 +617,6 @@ function stopAudioStateOnly() {
         window.speechSynthesis.cancel();
     }
 
-    // Gỡ highlight tất cả cảnh
     document.querySelectorAll(".scene-card").forEach(card => {
         card.classList.remove("active-narration");
     });

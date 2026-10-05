@@ -1,352 +1,279 @@
 [
   {
-    "id": "766749c1",
-    "created_at": "2026-09-07 20:53:54",
-    "user_input": "tạo câu chuyện cậu bé Shin đang tưới cây",
+    "id": "2a29da91",
+    "created_at": "2026-10-05 19:53:20",
+    "user_input": "Viết một đoạn truyện kỳ ảo ngắn: Một người thợ sửa đồng hồ phát hiện ra bánh răng trong chiếc đồng hồ cổ của một vị khách lạ chính là những mảnh vỡ thời gian từ tương lai của chính mình.",
     "age": "Lớp 3 - 4",
-    "style": "Dễ thương",
-    "title": "Câu Chuyện Của Shin: tạo câu chuyện cậu bé Shin đan...",
-    "theme": "Lòng nhân ái, sự chăm chỉ và tinh thần yêu thiên nhiên",
+    "style": "Hoạt hình",
+    "is_private": false,
+    "title": "Bí Mật Thời Gian Trong Chiếc Đồng Hồ Cổ",
+    "theme": "Sự khám phá, Giá trị của hiện tại, Tầm quan trọng của mỗi khoảnh khắc",
     "characters": [
       {
-        "name": "Shin",
-        "appearance": "Nhân vật Shin ngộ nghĩnh, thông minh với trang phục rực rỡ"
+        "name": "Bác Thợ Đồng Hồ",
+        "appearance": "Một ông lão khoảng 60 tuổi, tóc bạc phơ, đeo kính tròn, mặc áo blouse trắng đã cũ, tay cầm kính lúp và các dụng cụ sửa đồng hồ nhỏ."
+      },
+      {
+        "name": "Vị Khách Lạ",
+        "appearance": "Một người đàn ông cao ráo, mặc áo khoác dài màu xám, đội mũ vành rộng che gần hết khuôn mặt, dáng vẻ bí ẩn."
       }
     ],
-    "setting": "Bối cảnh sinh động phù hợp với câu chuyện 'tạo câu chuyện cậu bé Shin đang tưới cây'",
-    "story_summary": "Câu chuyện xoay quanh Shin cùng những trải nghiệm ý nghĩa dựa trên ý tưởng 'tạo câu chuyện cậu bé Shin đang tưới cây'. Qua đó, Shin đã mang lại niềm vui và học được bài học cuộc sống bổ ích.",
-    "moral": "Hãy luôn chăm chỉ, yêu thương bạn bè và môi trường xung quanh.",
+    "setting": "Cửa hàng sửa đồng hồ cũ kỹ, ấm cúng, với rất nhiều loại đồng hồ treo tường và để bàn, kim loại sáng bóng, bánh răng lấp lánh.",
+    "story_summary": "Bác Thợ Đồng Hồ nhận sửa một chiếc đồng hồ cổ bí ẩn từ một vị khách lạ. Trong quá trình sửa chữa, bác phát hiện ra những bánh răng bên trong chiếc đồng hồ không phải là kim loại bình thường, mà là những mảnh ký ức từ tương lai của chính mình. Sự khám phá này khiến bác trân trọng hơn từng khoảnh khắc hiện tại và những kỷ niệm quý giá.",
+    "moral": "Mỗi khoảnh khắc trong cuộc sống đều là một phần quý giá tạo nên tương lai của chúng ta. Hãy sống trọn vẹn và trân trọng từng giây phút hiện tại.",
     "storyboard": [
-      "Giới thiệu Shin và bắt đầu hoạt động 'tạo câu chuyện cậu bé Shin đang tưới cây'.",
-      "Shin kiên trì thực hiện công việc và nhận được sự hỗ trợ đáng yêu.",
-      "Shin hoàn thành công việc và gặt hái bài học giáo dục sâu sắc."
+      "Bác Thợ Đồng Hồ đang ngồi tỉ mẩn bên chiếc bàn làm việc đầy dụng cụ, ánh đèn vàng hắt sáng căn tiệm nhỏ. Cửa mở, một Vị Khách Lạ bước vào, đặt lên bàn một chiếc đồng hồ quả quýt cũ kỹ, vỏ bằng đồng đã ố màu. 'Xin bác sửa giúp chiếc đồng hồ này, nó không chạy nữa,' vị khách nói với giọng trầm, rồi nhanh chóng rời đi mà không đợi trả lời, để lại chiếc đồng hồ đầy bí ẩn. Bác Thợ Đồng Hồ tò mò cầm chiếc đồng hồ lên, cảm nhận được một luồng năng lượng kỳ lạ từ nó.",
+      "Bác Thợ Đồng Hồ cẩn thận mở chiếc đồng hồ ra. Thay vì những bánh răng kim loại quen thuộc, bác nhìn thấy những mảnh nhỏ lấp lánh như pha lê, bên trong mỗi mảnh lại hiện lên những hình ảnh mờ ảo: đó là cảnh bác đang chơi đùa với cháu gái, cảnh bác đang sửa chiếc đồng hồ đầu tiên trong đời, cảnh bác cười vui vẻ bên gia đình. Bác nhận ra đó chính là những khoảnh khắc quý giá từ tương lai của chính mình, được lưu giữ trong từng 'bánh răng thời gian' này. Bác ngạc nhiên tột độ, đôi mắt rưng rưng xúc động.",
+      "Bác Thợ Đồng Hồ nhẹ nhàng lắp lại các 'bánh răng thời gian' vào đúng vị trí. Chiếc đồng hồ bỗng phát ra ánh sáng dịu nhẹ rồi bắt đầu chạy trở lại, kim giờ và kim phút chuyển động nhịp nhàng. Bác Thợ Đồng Hồ mỉm cười mãn nguyện. Bác không chỉ sửa một chiếc đồng hồ, mà còn khám phá ra giá trị của mỗi khoảnh khắc trong cuộc đời mình. Từ hôm đó, bác luôn trân trọng từng phút giây hiện tại, sống vui vẻ và yêu đời hơn, biết rằng mỗi hành động hôm nay đều đang tạo nên những kỷ niệm quý giá cho tương lai."
     ],
     "scenes": [
       {
         "scene_id": 1,
-        "description": "Giới thiệu nhân vật Shin và khởi đầu câu chuyện.",
+        "description": "Bác Thợ Đồng Hồ đang làm việc thì một Vị Khách Lạ mang đến chiếc đồng hồ quả quýt cũ kỹ và nhờ sửa, sau đó nhanh chóng rời đi một cách bí ẩn.",
         "characters": [
-          "Shin"
+          "Bác Thợ Đồng Hồ",
+          "Vị Khách Lạ"
         ],
-        "background": "Bối cảnh tươi sáng rạng rỡ nắng mai.",
-        "action": "Shin mỉm cười chuẩn bị bắt đầu công việc.",
-        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Câu Chuyện Của Shin: tạo câu chuyện cậu bé Shin đan...'. Hôm nay là một ngày rất tươi đẹp!",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute cartoon character named Shin.\nAction & Scene: Smiling happily and preparing for a new day.\nBackground: Bright sunny morning background with colorful scenery.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20Shin%2C%20Shin%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20chu%E1%BA%A9n%20b%E1%BB%8B%20b%E1%BA%AFt%20%C4%91%E1%BA%A7u%20c%C3%B4ng%20vi%E1%BB%87c.%2C%20B%E1%BB%91i%20c%E1%BA%A3nh%20t%C6%B0%C6%A1i%20s%C3%A1ng%20r%E1%BA%A1ng%20r%E1%BB%A1%20n%E1%BA%AFng%20mai.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=68144",
-        "audio_url": "/static/audio/story_temp_scene_1_female.mp3"
+        "background": "Cửa hàng sửa đồng hồ cũ kỹ, ấm cúng, với rất nhiều loại đồng hồ treo tường và để bàn, kim loại sáng bóng, bánh răng lấp lánh. Ánh đèn vàng hắt sáng căn tiệm nhỏ.",
+        "action": "Bác Thợ Đồng Hồ ngồi tỉ mẩn sửa chữa, Vị Khách Lạ bước vào đặt đồng hồ lên bàn và rời đi, Bác Thợ Đồng Hồ tò mò cầm chiếc đồng hồ lên.",
+        "narration": "Trong một cửa tiệm nhỏ ấm cúng, bác Thợ Đồng Hồ với mái tóc bạc phơ, đôi mắt tinh anh sau cặp kính tròn, đang say sưa bên những chiếc đồng hồ. Bỗng cánh cửa khẽ mở, một Vị Khách Lạ bí ẩn bước vào, đặt lên bàn một chiếc đồng hồ quả quýt cũ kỹ rồi vội vã rời đi. Chiếc đồng hồ ấy thật đặc biệt, nó như đang thì thầm một câu chuyện bí ẩn nào đó khiến bác Thợ Đồng Hồ vô cùng tò mò.",
+        "image_prompt": "Children book illustration style. An old clockmaker, about 60 years old, with white hair, round glasses, wearing an old white lab coat, holding a magnifying glass and small clock repair tools. He is sitting at a cluttered workbench, illuminated by a warm yellow lamp. A tall, mysterious man in a long gray coat and a wide-brimmed hat that mostly hides his face, places an old, tarnished brass pocket watch on the table. The clockmaker looks curious, a strange energy emanates from the watch. Detailed environment of an old, cozy clock repair shop with many gleaming wall and table clocks, sparkling gears. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%20old%20clockmaker%2C%20about%2060%20years%20old%2C%20with%20white%20hair%2C%20round%20glasses%2C%20wearing%20an%20old%20white%20lab%20coat%2C%20holding%20a%20magnifying%20glass%20and%20small%20clock%20repair%20tools.%20He%20is%20sitting%20at%20a%20cluttered%20workbench%2C%20illuminated%20by%20a%20warm%20yellow%20lamp.%20A%20tall%2C%20mysterious%20man%20in%20a%20long%20gray%20coat%20and%20a%20wide-brimmed%20hat%20that%20mostly%20hides%20his%20face%2C%20places%20an%20old%2C%20tarnished%20brass%20pocket%20watch%20on%20the%20table.%20The%20clockmaker%20looks%20curious%2C%20a%20strange%20energy%20emanates%20from%20the%20watch.%20Detailed%20environment%20of%20an%20old%2C%20cozy%20clock%20repair%20shop%20with%20many%20gleaming%20wall%20and%20table%20clocks%2C%20sparkling%20gears.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=95707",
+        "audio_url": "/static/audio/story_2a29da91_scene_1_female_bd7f4908460080c1.mp3"
       },
       {
         "scene_id": 2,
-        "description": "Shin hăng hái thực hiện hoạt động.",
+        "description": "Bác Thợ Đồng Hồ mở chiếc đồng hồ và phát hiện ra bên trong không phải bánh răng kim loại mà là những mảnh ký ức lấp lánh từ tương lai của chính mình, khiến bác ngạc nhiên và xúc động.",
         "characters": [
-          "Shin"
+          "Bác Thợ Đồng Hồ"
         ],
-        "background": "Bối cảnh rộn rã đầy sức sống.",
-        "action": "Shin cẩn thận tập trung làm công việc của mình.",
-        "narration": "Với sự chăm chỉ và hào hứng, Shin từng bước vượt qua những điều mới mẻ.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute cartoon character named Shin.\nAction & Scene: Focusing carefully on doing activities with enthusiasm.\nBackground: Vivid and active scene background.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20Shin%2C%20Shin%20c%E1%BA%A9n%20th%E1%BA%ADn%20t%E1%BA%ADp%20trung%20l%C3%A0m%20c%C3%B4ng%20vi%E1%BB%87c%20c%E1%BB%A7a%20m%C3%ACnh.%2C%20B%E1%BB%91i%20c%E1%BA%A3nh%20r%E1%BB%99n%20r%C3%A3%20%C4%91%E1%BA%A7y%20s%E1%BB%A9c%20s%E1%BB%91ng.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=16785",
-        "audio_url": "/static/audio/story_temp_scene_2_female.mp3"
+        "background": "Bàn làm việc của Bác Thợ Đồng Hồ trong cửa hàng sửa đồng hồ, với ánh sáng vàng tập trung vào chiếc đồng hồ đang mở.",
+        "action": "Bác Thợ Đồng Hồ cẩn thận mở chiếc đồng hồ, nhìn thấy những mảnh pha lê lấp lánh chứa hình ảnh ký ức, biểu cảm ngạc nhiên và xúc động.",
+        "narration": "Với đôi tay khéo léo, bác Thợ Đồng Hồ nhẹ nhàng mở chiếc đồng hồ ra. Ôi kìa! Thay vì những bánh răng kim loại quen thuộc, bác nhìn thấy những mảnh pha lê nhỏ lấp lánh như những vì sao. Mỗi mảnh pha lê lại hiện lên những hình ảnh thân thương: bác đang vui đùa cùng cháu gái, bác đang say mê sửa chiếc đồng hồ đầu tiên, hay những khoảnh khắc hạnh phúc bên gia đình. Bác nhận ra, đây chính là những kỷ niệm quý giá từ tương lai của mình! Bác Thợ Đồng Hồ ngạc nhiên đến sững sờ, đôi mắt rưng rưng xúc động.",
+        "image_prompt": "Children book illustration style. An old clockmaker, about 60 years old, with white hair, round glasses, wearing an old white lab coat, holding a magnifying glass and small clock repair tools. He is looking with wide-eyed surprise and deep emotion at the open pocket watch. Inside the watch, instead of metal gears, there are sparkling, crystal-like shards, each faintly showing images: the clockmaker playing with his granddaughter, repairing his first clock, laughing with family. The scene is focused on the workbench, with warm golden light illuminating the magical watch. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%20old%20clockmaker%2C%20about%2060%20years%20old%2C%20with%20white%20hair%2C%20round%20glasses%2C%20wearing%20an%20old%20white%20lab%20coat%2C%20holding%20a%20magnifying%20glass%20and%20small%20clock%20repair%20tools.%20He%20is%20looking%20with%20wide-eyed%20surprise%20and%20deep%20emotion%20at%20the%20open%20pocket%20watch.%20Inside%20the%20watch%2C%20instead%20of%20metal%20gears%2C%20there%20are%20sparkling%2C%20crystal-like%20shards%2C%20each%20faintly%20showing%20images%3A%20the%20clockmaker%20playing%20with%20his%20granddaughter%2C%20repairing%20his%20first%20clock%2C%20laughing%20with%20family.%20The%20scene%20is%20focused%20on%20the%20workbench%2C%20with%20warm%20golden%20light%20illuminating%20the%20magical%20watch.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=50964",
+        "audio_url": "/static/audio/story_2a29da91_scene_2_female_ec9f783bec2534d9.mp3"
       },
       {
         "scene_id": 3,
-        "description": "Shin hoàn thành niềm vui và bài học ý nghĩa.",
+        "description": "Bác Thợ Đồng Hồ lắp lại các 'bánh răng thời gian', chiếc đồng hồ chạy trở lại, mang đến cho bác niềm vui và sự trân trọng cuộc sống hiện tại.",
         "characters": [
-          "Shin"
+          "Bác Thợ Đồng Hồ"
         ],
-        "background": "Khung cảnh hoàng hôn ấm áp và niềm vui ngập tràn.",
-        "action": "Shin mỉm cười hạnh phúc ngắm nhìn thành quả.",
-        "narration": "Hành trình khép lại thật êm đềm và nhiều niềm vui. Câu chuyện xoay quanh Shin cùng những trải nghiệm ý nghĩa dựa trên ý tưởng 'tạo câu chuyện cậu bé Shin đang tưới cây'. Qua đó, Shin đã mang lại niềm vui và học được bài học cuộc sống bổ ích.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute cartoon character named Shin.\nAction & Scene: Smiling proudly and happily looking at achievements.\nBackground: Warm golden sunset background with cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20Shin%2C%20Shin%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20h%E1%BA%A1nh%20ph%C3%BAc%20ng%E1%BA%AFm%20nh%C3%ACn%20th%C3%A0nh%20qu%E1%BA%A3.%2C%20Khung%20c%E1%BA%A3nh%20ho%C3%A0ng%20h%C3%B4n%20%E1%BA%A5m%20%C3%A1p%20v%C3%A0%20ni%E1%BB%81m%20vui%20ng%E1%BA%ADp%20tr%C3%A0n.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=32280",
-        "audio_url": "/static/audio/story_temp_scene_3_female.mp3"
+        "background": "Cửa hàng sửa đồng hồ cũ kỹ, ấm cúng, với ánh sáng dịu nhẹ từ chiếc đồng hồ vừa được sửa chữa.",
+        "action": "Bác Thợ Đồng Hồ nhẹ nhàng lắp lại các mảnh pha lê, chiếc đồng hồ phát sáng và bắt đầu chạy, bác mỉm cười mãn nguyện.",
+        "narration": "Với tất cả sự trân trọng, bác Thợ Đồng Hồ nhẹ nhàng lắp lại những 'bánh răng thời gian' lấp lánh vào đúng vị trí. Chiếc đồng hồ quả quýt bỗng phát ra một ánh sáng dịu nhẹ, rồi kim giờ và kim phút bắt đầu chuyển động nhịp nhàng, đều đặn. Bác Thợ Đồng Hồ mỉm cười mãn nguyện. Từ giây phút ấy, bác không chỉ sửa một chiếc đồng hồ, mà còn khám phá ra một bí mật diệu kỳ: mỗi khoảnh khắc trong cuộc sống đều quý giá biết bao! Bác quyết tâm sống trọn vẹn từng giây phút, gieo mầm cho những kỷ niệm tươi đẹp trong tương lai.",
+        "image_prompt": "Children book illustration style. An old clockmaker, about 60 years old, with white hair, round glasses, wearing an old white lab coat, holding a magnifying glass and small clock repair tools. He is smiling warmly and contentedly, gently closing the pocket watch. The watch emits a soft, warm glow as its hands begin to move. The background is the cozy clock repair shop, filled with a gentle, golden light, symbolizing hope and new understanding. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%20old%20clockmaker%2C%20about%2060%20years%20old%2C%20with%20white%20hair%2C%20round%20glasses%2C%20wearing%20an%20old%20white%20lab%20coat%2C%20holding%20a%20magnifying%20glass%20and%20small%20clock%20repair%20tools.%20He%20is%20smiling%20warmly%20and%20contentedly%2C%20gently%20closing%20the%20pocket%20watch.%20The%20watch%20emits%20a%20soft%2C%20warm%20glow%20as%20its%20hands%20begin%20to%20move.%20The%20background%20is%20the%20cozy%20clock%20repair%20shop%2C%20filled%20with%20a%20gentle%2C%20golden%20light%2C%20symbolizing%20hope%20and%20new%20understanding.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=29707",
+        "audio_url": "/static/audio/story_2a29da91_scene_3_female_eb7bf53673a41e29.mp3"
       }
     ],
     "evaluation": {}
   },
   {
-    "id": "854473bf",
-    "created_at": "2026-09-07 20:52:04",
-    "user_input": "tạo con chó đang tười cây",
+    "id": "a059fdd4",
+    "created_at": "2026-09-28 20:17:11",
+    "user_input": "\"Hãy viết một truyện ngắn kể về một người mua được một chiếc gương cũ ở chợ đồ cổ, nhưng hình bóng trong gương lại cử động chậm hơn anh ta một nhịp.\"",
+    "age": "Lớp 5",
+    "style": "Hoạt hình",
+    "is_private": true,
+    "title": "Bí Ẩn Chiếc Gương Cổ",
+    "theme": "Sự tò mò, khám phá, và lòng dũng cảm",
+    "characters": [
+      {
+        "name": "An",
+        "appearance": "Một cậu bé khoảng 10 tuổi, tóc đen cắt ngắn, mặc áo phông xanh và quần jean, đeo kính cận tròn. Luôn mang theo một cuốn sổ nhỏ và bút để ghi chép."
+      }
+    ],
+    "setting": "Một căn phòng nhỏ ấm cúng với đầy sách và đồ vật cũ, một cửa hàng đồ cổ nhỏ nhắn ở góc phố, và một công viên xanh mát.",
+    "story_summary": "An mua một chiếc gương cũ từ cửa hàng đồ cổ và phát hiện ra hình ảnh trong gương cử động chậm hơn mình một nhịp. Cậu bé tò mò khám phá bí mật này, thử thách bản thân bằng cách phối hợp động tác với hình ảnh phản chiếu và cuối cùng nhận ra vẻ đẹp của sự khác biệt, học được cách trân trọng những điều độc đáo.",
+    "moral": "Mỗi người, mỗi vật đều có những đặc điểm riêng biệt. Đừng ngại khám phá và trân trọng những điều khác lạ, đôi khi chúng lại mang đến những điều thú vị và ý nghĩa.",
+    "storyboard": [
+      "An, một cậu bé có vẻ ngoài thông minh và hiếu kỳ, đang lang thang trong một cửa hàng đồ cổ cũ kỹ, ánh mắt cậu lướt qua những món đồ lạ mắt. Cuối cùng, cậu bị thu hút bởi một chiếc gương cổ nhỏ nhắn với khung gỗ chạm khắc tinh xảo. Cậu bé quyết định mua nó về nhà với số tiền tiết kiệm của mình. Khi An mang chiếc gương về và đặt nó trong phòng, cậu ngạc nhiên khi thấy hình ảnh của mình trong gương cử động chậm hơn một nhịp so với cậu. An đưa tay lên, hình ảnh trong gương chậm rãi làm theo, như thể có một khoảng trễ nhỏ. An nhìn chằm chằm vào chiếc gương với vẻ mặt vừa ngạc nhiên vừa tò mò, cậu bé bắt đầu ghi chép những quan sát của mình vào cuốn sổ tay.",
+      "An quyết định khám phá bí ẩn của chiếc gương. Cậu thử nhiều động tác khác nhau: nhảy múa, vẫy tay, gật đầu, nhưng hình ảnh trong gương luôn chậm hơn cậu một nhịp. An bắt đầu cảm thấy thích thú với sự khác biệt này. Cậu bé thử thách bản thân bằng cách cố gắng phối hợp nhịp nhàng với hình ảnh phản chiếu, tạo ra một điệu nhảy đồng bộ nhưng luôn có độ trễ thú vị. Cậu bé cười khúc khích khi nhìn thấy mình và 'bản sao' trong gương cùng nhau 'nhảy múa' một cách hài hước. An nhận ra rằng chiếc gương không phải là 'hỏng', mà nó có một đặc tính rất đặc biệt, và điều đó làm nó trở nên độc đáo.",
+      "Sau nhiều ngày 'chơi' với chiếc gương, An đã học được cách điều chỉnh động tác của mình để 'ăn khớp' với hình ảnh phản chiếu. Cậu bé không còn thấy khó chịu hay kỳ lạ nữa, mà thay vào đó là sự thích thú và trân trọng. An nhận ra rằng, giống như chiếc gương, mỗi người đều có những nhịp điệu và đặc điểm riêng. Cậu bé chia sẻ câu chuyện về chiếc gương với bạn bè, khiến họ cũng tò mò và thích thú. An mỉm cười nhìn vào chiếc gương, tự hào về người bạn đặc biệt này. Cậu bé hiểu rằng, đôi khi những điều khác biệt lại chính là điều làm nên sự thú vị và độc đáo của cuộc sống, và chúng ta nên học cách chấp nhận và trân trọng chúng."
+    ],
+    "scenes": [
+      {
+        "scene_id": 1,
+        "description": "An tìm thấy một chiếc gương cổ độc đáo ở cửa hàng đồ cổ và phát hiện ra hình ảnh trong gương cử động chậm hơn một nhịp.",
+        "characters": [
+          "An"
+        ],
+        "background": "Một cửa hàng đồ cổ cũ kỹ, sau đó là căn phòng nhỏ ấm cúng của An.",
+        "action": "An lang thang trong cửa hàng đồ cổ, chọn mua chiếc gương, mang về nhà và ngạc nhiên khi thấy hình ảnh phản chiếu cử động chậm hơn mình.",
+        "narration": "Trong một cửa hàng đồ cổ cũ kỹ, An, cậu bé với chiếc kính cận tròn và cuốn sổ tay luôn bên mình, đang say sưa khám phá. Ánh mắt tò mò của An dừng lại ở một chiếc gương cổ nhỏ nhắn, khung gỗ chạm khắc thật tinh xảo. Cậu bé thích thú rinh chiếc gương về nhà. Vừa đặt gương vào căn phòng nhỏ ấm cúng của mình, An đã thấy một điều thật kỳ lạ: hình ảnh cậu trong gương cử động chậm hơn một nhịp! An giơ tay lên, hình ảnh trong gương từ từ làm theo, như có một khoảng trễ nhỏ xíu. 'Ồ, thật thú vị!' An thốt lên, vội vàng ghi chép điều bí ẩn này vào cuốn sổ tay của mình.",
+        "image_prompt": "Children book illustration style. An, a 10-year-old boy with short black hair, wearing a blue t-shirt, jeans, and round glasses, carrying a small notebook and pen. He is standing in his cozy room filled with books and old items. In front of him, an antique mirror with an intricately carved wooden frame reflects his image, which is slightly delayed. An's facial expression is a mix of surprise and curiosity, as he raises one hand, and his reflection slowly follows. Warm, soft lighting from a nearby window. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%2C%20a%2010-year-old%20boy%20with%20short%20black%20hair%2C%20wearing%20a%20blue%20t-shirt%2C%20jeans%2C%20and%20round%20glasses%2C%20carrying%20a%20small%20notebook%20and%20pen.%20He%20is%20standing%20in%20his%20cozy%20room%20filled%20with%20books%20and%20old%20items.%20In%20front%20of%20him%2C%20an%20antique%20mirror%20with%20an%20intricately%20carved%20wooden%20frame%20reflects%20his%20image%2C%20which%20is%20slightly%20delayed.%20An%27s%20facial%20expression%20is%20a%20mix%20of%20surprise%20and%20curiosity%2C%20as%20he%20raises%20one%20hand%2C%20and%20his%20reflection%20slowly%20follows.%20Warm%2C%20soft%20lighting%20from%20a%20nearby%20window.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=12843",
+        "audio_url": "/static/audio/story_a059fdd4_scene_1_female_69e5393f12533771.mp3"
+      },
+      {
+        "scene_id": 2,
+        "description": "An khám phá bí ẩn của chiếc gương bằng cách thử các động tác và nhận ra sự độc đáo của nó.",
+        "characters": [
+          "An"
+        ],
+        "background": "Căn phòng nhỏ ấm cúng của An, với chiếc gương cổ là trung tâm.",
+        "action": "An thử nhiều động tác khác nhau (nhảy múa, vẫy tay, gật đầu) để kiểm tra chiếc gương, sau đó cố gắng phối hợp nhịp nhàng với hình ảnh phản chiếu, tạo ra điệu nhảy hài hước.",
+        "narration": "An quyết tâm khám phá bí mật của chiếc gương. Cậu bé thử đủ mọi động tác: nhảy múa, vẫy tay thật nhanh, gật đầu liên tục. Nhưng dù làm gì, hình ảnh trong gương vẫn luôn chậm hơn An một nhịp, như thể đang chơi trò 'đuổi bắt' đầy vui nhộn. An bắt đầu cảm thấy thích thú lạ thường với sự khác biệt này. Cậu bé còn nghĩ ra một trò chơi mới: cố gắng phối hợp thật nhịp nhàng với 'bản sao' trong gương, tạo thành một điệu nhảy đồng bộ nhưng luôn có độ trễ thật hài hước. Tiếng cười khúc khích vang lên khắp căn phòng khi An và 'người bạn' trong gương cùng nhau 'nhảy múa' một cách rất đặc biệt. An nhận ra, chiếc gương này không hề 'hỏng', mà nó có một điều gì đó thật độc đáo và thú vị!",
+        "image_prompt": "Children book illustration style. An, a 10-year-old boy with short black hair, wearing a blue t-shirt, jeans, and round glasses, carrying a small notebook and pen. He is actively dancing and waving his hands in his cozy room, trying to synchronize with his reflection in the antique mirror. His reflection is slightly delayed, creating a humorous, out-of-sync dance. An has a joyful and amused facial expression, laughing heartily. The room is still warm and inviting. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%2C%20a%2010-year-old%20boy%20with%20short%20black%20hair%2C%20wearing%20a%20blue%20t-shirt%2C%20jeans%2C%20and%20round%20glasses%2C%20carrying%20a%20small%20notebook%20and%20pen.%20He%20is%20actively%20dancing%20and%20waving%20his%20hands%20in%20his%20cozy%20room%2C%20trying%20to%20synchronize%20with%20his%20reflection%20in%20the%20antique%20mirror.%20His%20reflection%20is%20slightly%20delayed%2C%20creating%20a%20humorous%2C%20out-of-sync%20dance.%20An%20has%20a%20joyful%20and%20amused%20facial%20expression%2C%20laughing%20heartily.%20The%20room%20is%20still%20warm%20and%20inviting.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=40414",
+        "audio_url": "/static/audio/story_a059fdd4_scene_2_female_b8c331d05268b1a8.mp3"
+      },
+      {
+        "scene_id": 3,
+        "description": "An học cách trân trọng sự khác biệt của chiếc gương và chia sẻ bài học về sự độc đáo với bạn bè.",
+        "characters": [
+          "An"
+        ],
+        "background": "Căn phòng nhỏ ấm cúng của An, với ánh sáng ấm áp.",
+        "action": "An đã học được cách điều chỉnh động tác để 'ăn khớp' với hình ảnh phản chiếu, mỉm cười nhìn vào gương và chia sẻ câu chuyện với bạn bè.",
+        "narration": "Sau nhiều ngày 'chơi' cùng chiếc gương, An đã trở thành một 'nghệ sĩ' tài ba, cậu bé biết cách điều chỉnh động tác của mình để 'ăn khớp' với hình ảnh phản chiếu. Giờ đây, An không còn thấy chiếc gương kỳ lạ nữa, mà thay vào đó là sự yêu mến và trân trọng đặc biệt. Cậu bé nhận ra rằng, giống như chiếc gương độc đáo này, mỗi người chúng ta đều có những nhịp điệu và đặc điểm riêng biệt, tạo nên nét độc đáo của chính mình. An vui vẻ kể câu chuyện về chiếc gương cho bạn bè nghe, và ai cũng tò mò, thích thú. Nhìn vào chiếc gương, An mỉm cười mãn nguyện. Cậu bé hiểu rằng, đôi khi những điều khác biệt lại chính là điều làm nên sự thú vị và độc đáo của cuộc sống, và chúng ta nên học cách chấp nhận và trân trọng chúng.",
+        "image_prompt": "Children book illustration style. An, a 10-year-old boy with short black hair, wearing a blue t-shirt, jeans, and round glasses, carrying a small notebook and pen. He is standing in his cozy room, looking at his reflection in the antique mirror with a gentle, proud smile. He has learned to adjust his movements, and his reflection now moves in a harmonious, though still slightly delayed, rhythm with him. The room is bathed in warm, golden light, creating a comforting and happy atmosphere. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20An%2C%20a%2010-year-old%20boy%20with%20short%20black%20hair%2C%20wearing%20a%20blue%20t-shirt%2C%20jeans%2C%20and%20round%20glasses%2C%20carrying%20a%20small%20notebook%20and%20pen.%20He%20is%20standing%20in%20his%20cozy%20room%2C%20looking%20at%20his%20reflection%20in%20the%20antique%20mirror%20with%20a%20gentle%2C%20proud%20smile.%20He%20has%20learned%20to%20adjust%20his%20movements%2C%20and%20his%20reflection%20now%20moves%20in%20a%20harmonious%2C%20though%20still%20slightly%20delayed%2C%20rhythm%20with%20him.%20The%20room%20is%20bathed%20in%20warm%2C%20golden%20light%2C%20creating%20a%20comforting%20and%20happy%20atmosphere.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=10166",
+        "audio_url": "/static/audio/story_a059fdd4_scene_3_female_5c32b852ef5374e9.mp3"
+      }
+    ],
+    "evaluation": {}
+  },
+  {
+    "id": "22a5524a",
+    "created_at": "2026-09-28 19:35:04",
+    "user_input": "\"Hãy viết một truyện ngắn thể loại kỳ ảo, kể về một người thợ rèn tình cờ tìm thấy một viên đá lạ có khả năng thắp sáng mọi vật trong đêm, nhưng nó lại bắt đầu thì thầm những lời cảnh báo bí ẩn.\"",
     "age": "Lớp 1 - 2",
     "style": "Hoạt hình",
-    "title": "Câu Chuyện Của Chú Chó: tạo con chó đang tười cây",
-    "theme": "Lòng nhân ái, sự chăm chỉ và tinh thần yêu thiên nhiên",
+    "is_private": false,
+    "title": "Viên Đá Thầm Thì Trong Đêm",
+    "theme": "Lòng dũng cảm và sự cẩn trọng",
     "characters": [
       {
-        "name": "Chú Chó",
-        "appearance": "Chú chó nhỏ lanh lợi, vẫy đuôi vui vẻ"
+        "name": "Bác Thợ Rèn Sắt",
+        "appearance": "Một người đàn ông trung niên, râu quai nón màu nâu, mặc áo tạp dề da màu nâu sẫm, quần yếm xanh và đội mũ len xám. Tay cầm búa rèn."
+      },
+      {
+        "name": "Viên đá Phát Sáng",
+        "appearance": "Viên đá nhỏ, tròn, màu xanh ngọc bích, phát ra ánh sáng dịu nhẹ."
       }
     ],
-    "setting": "Bối cảnh sinh động phù hợp với câu chuyện 'tạo con chó đang tười cây'",
-    "story_summary": "Câu chuyện xoay quanh Chú Chó cùng những trải nghiệm ý nghĩa dựa trên ý tưởng 'tạo con chó đang tười cây'. Qua đó, Chú Chó đã mang lại niềm vui và học được bài học cuộc sống bổ ích.",
-    "moral": "Hãy luôn chăm chỉ, yêu thương bạn bè và môi trường xung quanh.",
+    "setting": "Xưởng rèn cũ kỹ cạnh bìa rừng, buổi tối và đêm tối.",
+    "story_summary": "Bác Thợ Rèn Sắt tình cờ tìm thấy một viên đá phát sáng kỳ diệu. Viên đá không chỉ thắp sáng xưởng rèn mà còn thì thầm những lời cảnh báo bí ẩn. Bác Thợ Rèn Sắt đã dũng cảm lắng nghe và làm theo lời khuyên, giúp bác tránh được nguy hiểm và hiểu ra giá trị của sự cẩn trọng.",
+    "moral": "Hãy luôn lắng nghe trực giác và cẩn trọng trước những điều kỳ lạ để bảo vệ bản thân.",
     "storyboard": [
-      "Giới thiệu Chú Chó và bắt đầu hoạt động 'tạo con chó đang tười cây'.",
-      "Chú Chó kiên trì thực hiện công việc và nhận được sự hỗ trợ đáng yêu.",
-      "Chú Chó hoàn thành công việc và gặt hái bài học giáo dục sâu sắc."
+      "Bác Thợ Rèn Sắt đang cặm cụi trong xưởng rèn tối om, chỉ có ánh lửa lò rèn bập bùng. Bác thở dài vì trời tối quá nhanh. Khi bác đang dọn dẹp, bỗng nhiên một viên đá nhỏ màu xanh ngọc bích lăn ra từ đống than cũ. Viên đá phát ra ánh sáng dịu nhẹ, đủ để thắp sáng một góc xưởng. Bác Thợ Rèn Sắt ngạc nhiên nhặt viên đá lên, ánh mắt tò mò.",
+      "Bác Thợ Rèn Sắt đặt viên đá lên bàn làm việc. Ánh sáng của viên đá lan tỏa khắp xưởng, giúp bác nhìn rõ mọi thứ. Bỗng nhiên, bác nghe thấy một giọng nói nhỏ, như tiếng gió thì thầm: 'Cẩn thận... mái nhà... sắp sập...'. Bác Thợ Rèn Sắt giật mình, nhìn quanh nhưng không thấy ai. Giọng nói lại vang lên, rõ ràng hơn: 'Mái nhà... cũ kỹ... nguy hiểm...'. Bác ban đầu hoài nghi, nhưng khi nhìn lên mái nhà, bác thấy một vài vết nứt lớn mà trước đây chưa từng để ý.",
+      "Bác Thợ Rèn Sắt quyết định tin lời viên đá. Bác nhanh chóng dùng những thanh gỗ chắc chắn để chống đỡ mái nhà. Ngay sau khi bác hoàn thành, một cơn gió lớn ập đến, làm đổ sập một phần mái nhà cũ kỹ. Bác Thợ Rèn Sắt đứng nhìn đống đổ nát, thở phào nhẹ nhõm. Bác nhìn viên đá phát sáng, viên đá vẫn lấp lánh như một lời cảm ơn. Từ đó, bác Thợ Rèn Sắt luôn trân trọng viên đá và học được bài học về sự cẩn trọng và lắng nghe những điều kỳ lạ."
     ],
     "scenes": [
       {
         "scene_id": 1,
-        "description": "Giới thiệu nhân vật và khởi đầu buổi sáng tươi đẹp tại bìa rừng.",
+        "description": "Bác Thợ Rèn Sắt tình cờ tìm thấy một viên đá phát sáng kỳ diệu trong xưởng rèn tối tăm của mình.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Sắt",
+          "Viên đá Phát Sáng"
         ],
-        "background": "Khu rừng rực rỡ nắng mai với hoa thảm cỏ xanh mướt.",
-        "action": "Mèo Bông mỉm cười vẫy tay chào Thỏ Ngọc đang đeo chiếc balo vàng.",
-        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Câu Chuyện Của Chú Chó: tạo con chó đang tười cây'. Hôm nay là một ngày nắng đẹp trời!",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat with blue eyes and red ribbon next to a cute bunny with yellow backpack.\nAction & Scene: Waving hands cheerfully at each other under bright morning sunlight.\nBackground: Beautiful enchanted forest with green grass and colorful blooming flowers.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20M%C3%A8o%20B%C3%B4ng%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20v%E1%BA%ABy%20tay%20ch%C3%A0o%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20%C4%91ang%20%C4%91eo%20chi%E1%BA%BFc%20balo%20v%C3%A0ng.%2C%20Khu%20r%E1%BB%ABng%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20mai%20v%E1%BB%9Bi%20hoa%20th%E1%BA%A3m%20c%E1%BB%8F%20xanh%20m%C6%B0%E1%BB%9Bt.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=77298",
-        "audio_url": "/static/audio/story_temp_scene_1_female.mp3"
+        "background": "Xưởng rèn cũ kỹ cạnh bìa rừng vào buổi tối. Xưởng tối om, chỉ có ánh lửa lò rèn bập bùng.",
+        "action": "Bác Thợ Rèn Sắt đang dọn dẹp, bỗng nhiên một viên đá nhỏ màu xanh ngọc bích lăn ra từ đống than cũ, phát ra ánh sáng dịu nhẹ. Bác ngạc nhiên nhặt viên đá lên.",
+        "narration": "Trong xưởng rèn cũ kỹ cạnh bìa rừng, khi màn đêm buông xuống, bác Thợ Rèn Sắt vẫn cặm cụi làm việc. Trời tối quá nhanh, ánh lửa lò rèn bập bùng cũng không đủ soi sáng mọi ngóc ngách. Bác thở dài, vừa dọn dẹp dụng cụ vừa ước có thêm chút ánh sáng. Bỗng nhiên, từ đống than cũ, một viên đá nhỏ xíu, tròn xoe, màu xanh ngọc bích lăn ra! Ô kìa, viên đá ấy lại tự phát ra ánh sáng dịu nhẹ, đủ để thắp sáng cả một góc xưởng. Bác Thợ Rèn Sắt tròn mắt ngạc nhiên, cẩn thận nhặt viên đá lên, trái tim đập thình thịch vì tò mò.",
+        "image_prompt": "Children book illustration style. A middle-aged blacksmith with a brown goatee, wearing a dark brown leather apron, blue overalls, and a gray beanie hat, holding a blacksmith's hammer. He is in a dimly lit, old forge workshop at dusk, next to a forest. The only light source is a flickering forge fire. He is looking with surprise at a small, round, emerald green glowing stone that has rolled out from a pile of old coal. The stone emits a soft, gentle light, illuminating a corner of the workshop. 8k resolution.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20A%20middle-aged%20blacksmith%20with%20a%20brown%20goatee%2C%20wearing%20a%20dark%20brown%20leather%20apron%2C%20blue%20overalls%2C%20and%20a%20gray%20beanie%20hat%2C%20holding%20a%20blacksmith%27s%20hammer.%20He%20is%20in%20a%20dimly%20lit%2C%20old%20forge%20workshop%20at%20dusk%2C%20next%20to%20a%20forest.%20The%20only%20light%20source%20is%20a%20flickering%20forge%20fire.%20He%20is%20looking%20with%20surprise%20at%20a%20small%2C%20round%2C%20emerald%20green%20glowing%20stone%20that%20has%20rolled%20out%20from%20a%20pile%20of%20old%20coal.%20The%20stone%20emits%20a%20soft%2C%20gentle%20light%2C%20illuminating%20a%20corner%20of%20the%20workshop.%208k%20resolution.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=36533",
+        "audio_url": "/static/audio/story_22a5524a_scene_1_female_8353b9fe7f15b1ce.mp3"
       },
       {
         "scene_id": 2,
-        "description": "Hai bạn cùng nhau đối mặt với thử thách và hỗ trợ lẫn nhau.",
+        "description": "Viên đá Phát Sáng thì thầm những lời cảnh báo bí ẩn về mái nhà bị nứt, khiến Bác Thợ Rèn Sắt ban đầu hoài nghi nhưng sau đó nhận ra sự thật.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Sắt",
+          "Viên đá Phát Sáng"
         ],
-        "background": "Cây cầu gỗ nhỏ bắc qua dòng stream trong veo.",
-        "action": "Thỏ Ngọc cẩn thận chìa tay dắt Mèo Bông qua dòng suối nhỏ.",
-        "narration": "Trên đường đi, cả hai cùng dắt tay nhau vượt qua dòng suối mát lành.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat holding hands with a cute bunny.\nAction & Scene: Crossing a small wooden bridge over a sparkling clear stream together carefully.\nBackground: Sunny forest stream with shiny pebbles and jumping butterflies.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20c%E1%BA%A9n%20th%E1%BA%ADn%20ch%C3%ACa%20tay%20d%E1%BA%AFt%20M%C3%A8o%20B%C3%B4ng%20qua%20d%C3%B2ng%20su%E1%BB%91i%20nh%E1%BB%8F.%2C%20C%C3%A2y%20c%E1%BA%A7u%20g%E1%BB%97%20nh%E1%BB%8F%20b%E1%BA%AFc%20qua%20d%C3%B2ng%20stream%20trong%20veo.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=67055",
-        "audio_url": "/static/audio/story_temp_scene_2_female.mp3"
+        "background": "Bên trong xưởng rèn cũ kỹ, ánh sáng dịu nhẹ của viên đá lan tỏa khắp nơi, chiếu rõ cả những vết nứt trên mái nhà.",
+        "action": "Bác Thợ Rèn Sắt đặt viên đá lên bàn làm việc. Viên đá phát sáng mạnh hơn. Bác nghe thấy tiếng thì thầm cảnh báo về mái nhà. Bác giật mình, nhìn quanh và sau đó nhìn lên mái nhà, phát hiện những vết nứt lớn.",
+        "narration": "Bác Thợ Rèn Sắt nhẹ nhàng đặt viên đá xanh lên chiếc bàn gỗ cũ. Lạ lùng thay, ánh sáng từ viên đá bỗng chốc lan tỏa khắp xưởng, mọi vật hiện rõ mồn một. Bác đang ngắm nhìn thì bỗng nghe thấy một giọng nói nhỏ xíu, như tiếng gió thì thầm bên tai: \"Cẩn thận... mái nhà... sắp sập...\". Bác Thợ Rèn giật mình quay phắt lại, không thấy ai cả. Giọng nói lại vang lên, lần này rõ ràng hơn một chút: \"Mái nhà... cũ kỹ... nguy hiểm...\". Bác Thợ Rèn Sắt ban đầu còn hoài nghi, nhưng khi ngước nhìn lên trần nhà, bác bỗng thấy những vết nứt lớn, đáng sợ mà bấy lâu nay bác chưa từng để ý!",
+        "image_prompt": "Children book illustration style. A middle-aged blacksmith with a brown goatee, wearing a dark brown leather apron, blue overalls, and a gray beanie hat. He is standing in his old forge workshop, looking up with a surprised and slightly worried expression. On the wooden workbench in front of him, the small, round, emerald green glowing stone emits a soft, strong light, illuminating the entire workshop. Visible cracks are clearly seen on the old wooden roof above. 8k resolution.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20A%20middle-aged%20blacksmith%20with%20a%20brown%20goatee%2C%20wearing%20a%20dark%20brown%20leather%20apron%2C%20blue%20overalls%2C%20and%20a%20gray%20beanie%20hat.%20He%20is%20standing%20in%20his%20old%20forge%20workshop%2C%20looking%20up%20with%20a%20surprised%20and%20slightly%20worried%20expression.%20On%20the%20wooden%20workbench%20in%20front%20of%20him%2C%20the%20small%2C%20round%2C%20emerald%20green%20glowing%20stone%20emits%20a%20soft%2C%20strong%20light%2C%20illuminating%20the%20entire%20workshop.%20Visible%20cracks%20are%20clearly%20seen%20on%20the%20old%20wooden%20roof%20above.%208k%20resolution.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=23984",
+        "audio_url": "/static/audio/story_22a5524a_scene_2_female_19ef250f68002743.mp3"
       },
       {
         "scene_id": 3,
-        "description": "Kết thúc hành trình vui vẻ và bài học ý nghĩa.",
+        "description": "Bác Thợ Rèn Sắt tin lời viên đá, gia cố mái nhà và thoát khỏi nguy hiểm khi mái nhà sập. Bác học được bài học về sự cẩn trọng.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Sắt",
+          "Viên đá Phát Sáng"
         ],
-        "background": "Đồi cỏ hoa rực rỡ nắng chiều hoàng hôn êm đềm.",
-        "action": "Hai bạn ngồi cạnh nhau ngắm hoàng hôn và mỉm cười hạnh phúc.",
-        "narration": "Hành trình khép lại thật êm đềm. Câu chuyện xoay quanh Chú Chó cùng những trải nghiệm ý nghĩa dựa trên ý tưởng 'tạo con chó đang tười cây'. Qua đó, Chú Chó đã mang lại niềm vui và học được bài học cuộc sống bổ ích.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat and cute bunny sitting side by side.\nAction & Scene: Watching beautiful warm sunset sky and smiling happily together.\nBackground: Grassy hill with soft golden sunset light and warm cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Hai%20b%E1%BA%A1n%20ng%E1%BB%93i%20c%E1%BA%A1nh%20nhau%20ng%E1%BA%AFm%20ho%C3%A0ng%20h%C3%B4n%20v%C3%A0%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20h%E1%BA%A1nh%20ph%C3%BAc.%2C%20%C4%90%E1%BB%93i%20c%E1%BB%8F%20hoa%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20chi%E1%BB%81u%20ho%C3%A0ng%20h%C3%B4n%20%C3%AAm%20%C4%91%E1%BB%81m.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=50411",
-        "audio_url": "/static/audio/story_temp_scene_3_female.mp3"
+        "background": "Xưởng rèn cũ kỹ, một phần mái nhà đã sập đổ. Ánh sáng dịu nhẹ của viên đá vẫn chiếu rọi, mang lại cảm giác ấm áp và an toàn.",
+        "action": "Bác Thợ Rèn Sắt dùng những thanh gỗ chắc chắn để chống đỡ mái nhà. Ngay sau khi hoàn thành, một cơn gió lớn ập đến làm đổ sập một phần mái nhà. Bác thở phào nhẹ nhõm, nhìn viên đá phát sáng như một lời cảm ơn.",
+        "narration": "Không chút do dự, bác Thợ Rèn Sắt tin vào lời cảnh báo của viên đá. Bác nhanh chóng tìm những thanh gỗ chắc chắn nhất để chống đỡ phần mái nhà bị nứt. Vừa xong xuôi, một cơn gió lớn bất ngờ ập đến, ầm ầm làm đổ sập một phần mái nhà cũ kỹ! Bác Thợ Rèn Sắt đứng nhìn đống đổ nát, thở phào nhẹ nhõm, mồ hôi lấm tấm trên trán. Nếu không có viên đá, chắc bác đã gặp nguy hiểm rồi! Bác nhìn viên đá xanh ngọc bích vẫn lấp lánh trên bàn, như một lời cảm ơn thầm lặng. Từ đó, bác Thợ Rèn Sắt luôn trân trọng viên đá kỳ diệu và học được một bài học quý giá: hãy luôn lắng nghe những điều kỳ lạ và cẩn trọng trước mọi nguy hiểm để bảo vệ bản thân mình nhé!",
+        "image_prompt": "Children book illustration style. A middle-aged blacksmith with a brown goatee, wearing a dark brown leather apron, blue overalls, and a gray beanie hat, is standing in his old forge workshop, looking relieved and grateful. Behind him, a part of the old wooden roof has collapsed onto the floor, but the area where he was working is safe, supported by sturdy wooden beams. The small, round, emerald green glowing stone on the workbench emits a warm, soft light, shining brightly. The overall atmosphere is safe and warm with golden lighting. 8k resolution.",
+        "image_url": "https://image.pollinations.ai/prompt/Children%20book%20illustration%20style.%20A%20middle-aged%20blacksmith%20with%20a%20brown%20goatee%2C%20wearing%20a%20dark%20brown%20leather%20apron%2C%20blue%20overalls%2C%20and%20a%20gray%20beanie%20hat%2C%20is%20standing%20in%20his%20old%20forge%20workshop%2C%20looking%20relieved%20and%20grateful.%20Behind%20him%2C%20a%20part%20of%20the%20old%20wooden%20roof%20has%20collapsed%20onto%20the%20floor%2C%20but%20the%20area%20where%20he%20was%20working%20is%20safe%2C%20supported%20by%20sturdy%20wooden%20beams.%20The%20small%2C%20round%2C%20emerald%20green%20glowing%20stone%20on%20the%20workbench%20emits%20a%20warm%2C%20soft%20light%2C%20shining%20brightly.%20The%20overall%20atmosphere%20is%20safe%20and%20warm%20with%20golden%20lighting.%208k%20resolution.%2C%203D%20Disney%20Pixar%20animated%20cute%203d%20illustration%2C%20vivid%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=17892",
+        "audio_url": "/static/audio/story_22a5524a_scene_3_female_55a9646d914d093e.mp3"
       }
     ],
     "evaluation": {}
   },
   {
-    "id": "af88e92e",
-    "created_at": "2026-09-07 20:49:27",
-    "user_input": "tạo một câu chuyện có một cậu bé tên shin đang tưới cây không có nhân vật là mèo bông gì hết",
-    "age": "Lớp 5",
-    "style": "Cổ tích",
-    "title": "Hành Trình Thú Vị: tạo một câu chuyện có một...",
-    "theme": "Tình bạn và tinh thần giúp đỡ lẫn nhau",
+    "id": "e19173b6",
+    "created_at": "2026-09-28 19:24:34",
+    "user_input": "\"Hãy viết một truyện ngắn thể loại kỳ ảo, kể về một người thợ rèn tình cờ tìm thấy một viên đá lạ có khả năng thắp sáng mọi vật trong đêm, nhưng nó lại bắt đầu thì thầm những lời cảnh báo bí ẩn.\"",
+    "age": "Lớp 3 - 4",
+    "style": "Kỳ ảo",
+    "is_private": true,
+    "title": "Bí Ẩn Viên Đá Thầm Thì",
+    "theme": "Sự thận trọng và lòng dũng cảm",
     "characters": [
       {
-        "name": "Mèo Bông",
-        "appearance": "Chú mèo nhỏ lông trắng muốt, đôi mắt xanh ngọc bích lấp lánh, đeo chiếc nơ đỏ ở cổ"
-      },
-      {
-        "name": "Thỏ Ngọc",
-        "appearance": "Chú thỏ đôi tai dài đáng yêu, mang chiếc balo màu vàng nhỏ nhắn"
+        "name": "Bác Thợ Rèn Búa To",
+        "appearance": "Thân hình vạm vỡ, áo thợ rèn màu nâu sẫm, tóc và râu quai nón màu xám tro, khuôn mặt hiền lành nhưng đôi mắt tinh anh, đeo tạp dề da màu đen."
       }
     ],
-    "setting": "Khu rừng xanh thẫm xinh đẹp rộn rã tiếng chim hót",
-    "story_summary": "Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'tạo một câu chuyện có một cậu bé tên shin đang tưới cây không có nhân vật là mèo bông gì hết', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-    "moral": "Hãy luôn sẵn lòng mở lòng giúp đỡ bạn bè xung quanh.",
+    "setting": "Xưởng rèn cũ kỹ nằm cuối một ngôi làng nhỏ, gần bìa rừng, vào một buổi chiều tà và đêm tối.",
+    "story_summary": "Bác Thợ Rèn Búa To tình cờ nhặt được một viên đá phát sáng kỳ lạ trong rừng. Viên đá mang lại ánh sáng cho xưởng nhưng lại bắt đầu thì thầm những lời cảnh báo bí ẩn về một nguy hiểm đang đến. Bác Búa To đã dũng cảm lắng nghe và chuẩn bị, giúp cả làng thoát khỏi một trận lũ bất ngờ.",
+    "moral": "Hãy luôn lắng nghe những dấu hiệu cảnh báo xung quanh và đừng ngại đối mặt với những điều bí ẩn để bảo vệ cộng đồng.",
     "storyboard": [
-      "Mèo Bông và Thỏ Ngọc gặp nhau ở bìa rừng và quyết định khởi hành.",
-      "Hai bạn gặp một thử thách nhỏ trên đường đi và cùng nhau vượt qua.",
-      "Cuối cùng cả hai tìm thấy niềm vui và trao nhau nụ cười ấm áp."
+      "Cảnh 1: Bác Thợ Rèn Búa To đang miệt mài gõ búa trong xưởng rèn tối om, chỉ có ánh lửa lò bập bùng. Bác thở dài vì xưởng thiếu ánh sáng. Quyết định đi ra bìa rừng gần đó tìm củi khô. Khi đang cúi xuống nhặt củi, bác tình cờ thấy một viên đá nhỏ lấp lánh dưới ánh trăng non, phát ra ánh sáng xanh nhạt. Bác tò mò nhặt lên, viên đá trở nên sáng rực hơn, soi rõ cả con đường về xưởng.",
+      "Cảnh 2: Bác Búa To mang viên đá về đặt trên bàn làm việc. Viên đá chiếu sáng khắp xưởng, giúp bác hoàn thành công việc dễ dàng hơn. Nhưng khi đêm xuống, bác bắt đầu nghe thấy những tiếng thì thầm nhỏ từ viên đá, như tiếng gió thoảng qua tai: 'Nước... dâng... nguy hiểm...'. Lúc đầu bác nghĩ mình nghe nhầm, nhưng tiếng thì thầm cứ lặp đi lặp lại và ngày càng rõ ràng hơn, kèm theo cảm giác lành lạnh từ viên đá. Bác Búa To lo lắng nhìn ra ngoài cửa sổ, trời bắt đầu mưa lất phất.",
+      "Cảnh 3: Tiếng thì thầm của viên đá trở nên gấp gáp: 'Nước! Nước!'. Bác Búa To, dù hơi sợ hãi, nhưng tin vào trực giác và viên đá. Bác vội vã chạy ra ngoài đánh thức dân làng, cảnh báo về trận lũ sắp đến. Mọi người ban đầu hoài nghi nhưng thấy sự khẩn trương của bác và ánh sáng xanh kỳ lạ từ viên đá trên tay bác, họ bắt đầu sơ tán lên những nơi cao hơn. Ngay sau đó, một trận mưa lớn đổ xuống, dòng suối nhỏ cạnh làng biến thành dòng nước lũ cuồn cuộn. Nhờ sự cảnh báo kịp thời của bác Búa To và viên đá, cả làng đã an toàn. Viên đá lúc này vẫn phát sáng lấp lánh, nhưng tiếng thì thầm đã dịu đi, như một lời cảm ơn."
     ],
     "scenes": [
       {
         "scene_id": 1,
-        "description": "Giới thiệu nhân vật và khởi đầu buổi sáng tươi đẹp tại bìa rừng.",
+        "description": "Bác Thợ Rèn Búa To tìm thấy viên đá phát sáng kỳ lạ trong rừng khi đang tìm củi.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Búa To"
         ],
-        "background": "Khu rừng rực rỡ nắng mai với hoa thảm cỏ xanh mướt.",
-        "action": "Mèo Bông mỉm cười vẫy tay chào Thỏ Ngọc đang đeo chiếc balo vàng.",
-        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Hành Trình Thú Vị: tạo một câu chuyện có một...'. Hôm nay là một ngày nắng đẹp trời!",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat with blue eyes and red ribbon next to a cute bunny with yellow backpack.\nAction & Scene: Waving hands cheerfully at each other under bright morning sunlight.\nBackground: Beautiful enchanted forest with green grass and colorful blooming flowers.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20M%C3%A8o%20B%C3%B4ng%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20v%E1%BA%ABy%20tay%20ch%C3%A0o%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20%C4%91ang%20%C4%91eo%20chi%E1%BA%BFc%20balo%20v%C3%A0ng.%2C%20Khu%20r%E1%BB%ABng%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20mai%20v%E1%BB%9Bi%20hoa%20th%E1%BA%A3m%20c%E1%BB%8F%20xanh%20m%C6%B0%E1%BB%9Bt.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=45788",
-        "audio_url": "/static/audio/story_temp_scene_1_female.mp3"
+        "background": "Xưởng rèn cũ kỹ tối om với ánh lửa bập bùng, sau đó chuyển sang bìa rừng dưới ánh trăng non.",
+        "action": "Bác Thợ Rèn Búa To miệt mài làm việc, sau đó đi tìm củi và tình cờ nhặt được viên đá phát sáng.",
+        "narration": "Trong xưởng rèn cũ kỹ, bác Thợ Rèn Búa To vạm vỡ đang miệt mài gõ búa, từng tiếng 'cốc, cốc' vang vọng trong màn đêm. Ánh lửa lò bập bùng là nguồn sáng duy nhất, khiến bác thở dài: 'Ước gì có thêm chút ánh sáng!'. Bác quyết định ra bìa rừng gần đó tìm thêm củi khô. Dưới ánh trăng non mơ màng, khi đang cúi xuống nhặt củi, bỗng bác thấy một viên đá nhỏ lấp lánh, phát ra ánh sáng xanh nhạt thật kỳ diệu. Bác tò mò nhặt lên, viên đá như cảm nhận được, sáng rực hơn, soi rõ cả con đường về xưởng, dẫn lối bác trở về trong sự ngạc nhiên và thích thú.",
+        "image_prompt": "Fantasy art style. A strong, muscular blacksmith named Búa To, wearing a dark brown blacksmith's shirt, gray hair and mutton chop beard, a kind face with keen eyes, and a black leather apron, is in a dimly lit, old blacksmith's workshop, lit only by the flickering fire of the forge. He is holding a large hammer, looking tired. Then, he is in a magical forest at dusk, under a crescent moon, bending down to pick up firewood. He discovers a small, glowing, pale blue stone on the ground. The stone emits a soft, enchanting light, illuminating his path as he holds it. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Fantasy%20art%20style.%20A%20strong%2C%20muscular%20blacksmith%20named%20B%C3%BAa%20To%2C%20wearing%20a%20dark%20brown%20blacksmith%27s%20shirt%2C%20gray%20hair%20and%20mutton%20chop%20beard%2C%20a%20kind%20face%20with%20keen%20eyes%2C%20and%20a%20black%20leather%20apron%2C%20is%20in%20a%20dimly%20lit%2C%20old%20blacksmith%27s%20workshop%2C%20lit%20only%20by%20the%20flickering%20fire%20of%20the%20forge.%20He%20is%20holding%20a%20large%20hammer%2C%20looking%20tired.%20Then%2C%20he%20is%20in%20a%20magical%20forest%20at%20dusk%2C%20under%20a%20crescent%20moon%2C%20bending%20down%20to%20pick%20up%20firewood.%20He%20discovers%20a%20small%2C%20glowing%2C%20pale%20blue%20stone%20on%20the%20ground.%20The%20stone%20emits%20a%20soft%2C%20enchanting%20light%2C%20illuminating%20his%20path%20as%20he%20holds%20it.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%20Epic%20magical%20fantasy%20art%20style%2C%20mythical%20creatures%2C%20mystical%20glowing%20magic%20effects%2C%20ethereal%20starry%20lighting%2C%20enchanted%20vibrant%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=52522",
+        "audio_url": "/static/audio/story_e19173b6_scene_1_female_b680b29dd6cd2efb.mp3"
       },
       {
         "scene_id": 2,
-        "description": "Hai bạn cùng nhau đối mặt với thử thách và hỗ trợ lẫn nhau.",
+        "description": "Viên đá chiếu sáng xưởng nhưng bắt đầu thì thầm những lời cảnh báo bí ẩn về nguy hiểm.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Búa To"
         ],
-        "background": "Cây cầu gỗ nhỏ bắc qua dòng stream trong veo.",
-        "action": "Thỏ Ngọc cẩn thận chìa tay dắt Mèo Bông qua dòng suối nhỏ.",
-        "narration": "Trên đường đi, cả hai cùng dắt tay nhau vượt qua dòng suối mát lành.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat holding hands with a cute bunny.\nAction & Scene: Crossing a small wooden bridge over a sparkling clear stream together carefully.\nBackground: Sunny forest stream with shiny pebbles and jumping butterflies.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20c%E1%BA%A9n%20th%E1%BA%ADn%20ch%C3%ACa%20tay%20d%E1%BA%AFt%20M%C3%A8o%20B%C3%B4ng%20qua%20d%C3%B2ng%20su%E1%BB%91i%20nh%E1%BB%8F.%2C%20C%C3%A2y%20c%E1%BA%A7u%20g%E1%BB%97%20nh%E1%BB%8F%20b%E1%BA%AFc%20qua%20d%C3%B2ng%20stream%20trong%20veo.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=79758",
-        "audio_url": "/static/audio/story_temp_scene_2_female.mp3"
+        "background": "Xưởng rèn sáng bừng vào ban ngày, sau đó là đêm tối với cửa sổ nhìn ra trời mưa lất phất.",
+        "action": "Bác Thợ Rèn Búa To đặt viên đá trên bàn, viên đá chiếu sáng. Bác nghe thấy tiếng thì thầm và lo lắng nhìn ra ngoài.",
+        "narration": "Mang viên đá về xưởng, bác Búa To nhẹ nhàng đặt nó lên chiếc bàn làm việc cũ kỹ. Thật kỳ diệu, viên đá phát ra ánh sáng xanh lấp lánh, chiếu sáng khắp xưởng, giúp bác hoàn thành công việc dễ dàng hơn bao giờ hết. Nhưng khi màn đêm buông xuống, một điều kỳ lạ bắt đầu xảy ra. Bác nghe thấy những tiếng thì thầm nhỏ xíu từ viên đá, như tiếng gió thoảng qua tai: 'Nước... dâng... nguy hiểm...'. Lúc đầu, bác nghĩ mình nghe nhầm, nhưng tiếng thì thầm cứ lặp đi lặp lại, ngày càng rõ ràng hơn, kèm theo một cảm giác lành lạnh từ viên đá lan tỏa. Lo lắng, bác Búa To nhìn ra ngoài cửa sổ, trời đã bắt đầu mưa lất phất.",
+        "image_prompt": "Fantasy art style. A strong, muscular blacksmith named Búa To, wearing a dark brown blacksmith's shirt, gray hair and mutton chop beard, a kind face with keen eyes, and a black leather apron, is in his old blacksmith's workshop, which is now brightly lit by the glowing pale blue stone placed on his workbench. He is looking confused, with a slight frown. In the next moment, it's night, and he is looking out a window with a worried expression, seeing light rain falling outside. The glowing stone is still on the workbench, emitting soft, mysterious whispers (visualized as subtle wavy lines or faint glows). 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Fantasy%20art%20style.%20A%20strong%2C%20muscular%20blacksmith%20named%20B%C3%BAa%20To%2C%20wearing%20a%20dark%20brown%20blacksmith%27s%20shirt%2C%20gray%20hair%20and%20mutton%20chop%20beard%2C%20a%20kind%20face%20with%20keen%20eyes%2C%20and%20a%20black%20leather%20apron%2C%20is%20in%20his%20old%20blacksmith%27s%20workshop%2C%20which%20is%20now%20brightly%20lit%20by%20the%20glowing%20pale%20blue%20stone%20placed%20on%20his%20workbench.%20He%20is%20looking%20confused%2C%20with%20a%20slight%20frown.%20In%20the%20next%20moment%2C%20it%27s%20night%2C%20and%20he%20is%20looking%20out%20a%20window%20with%20a%20worried%20expression%2C%20seeing%20light%20rain%20falling%20outside.%20The%20glowing%20stone%20is%20still%20on%20the%20workbench%2C%20emitting%20soft%2C%20mysterious%20whispers%20%28visualized%20as%20subtle%20wavy%20lines%20or%20faint%20glows%29.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%20Epic%20magical%20fantasy%20art%20style%2C%20mythical%20creatures%2C%20mystical%20glowing%20magic%20effects%2C%20ethereal%20starry%20lighting%2C%20enchanted%20vibrant%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=41834",
+        "audio_url": "/static/audio/story_e19173b6_scene_2_female_a21cd70af2d080d2.mp3"
       },
       {
         "scene_id": 3,
-        "description": "Kết thúc hành trình vui vẻ và bài học ý nghĩa.",
+        "description": "Bác Thợ Rèn Búa To cảnh báo dân làng về trận lũ nhờ viên đá và cả làng được an toàn.",
         "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
+          "Bác Thợ Rèn Búa To",
+          "Dân làng"
         ],
-        "background": "Đồi cỏ hoa rực rỡ nắng chiều hoàng hôn êm đềm.",
-        "action": "Hai bạn ngồi cạnh nhau ngắm hoàng hôn và mỉm cười hạnh phúc.",
-        "narration": "Hành trình khép lại thật êm đềm. Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'tạo một câu chuyện có một cậu bé tên shin đang tưới cây không có nhân vật là mèo bông gì hết', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat and cute bunny sitting side by side.\nAction & Scene: Watching beautiful warm sunset sky and smiling happily together.\nBackground: Grassy hill with soft golden sunset light and warm cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Hai%20b%E1%BA%A1n%20ng%E1%BB%93i%20c%E1%BA%A1nh%20nhau%20ng%E1%BA%AFm%20ho%C3%A0ng%20h%C3%B4n%20v%C3%A0%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20h%E1%BA%A1nh%20ph%C3%BAc.%2C%20%C4%90%E1%BB%93i%20c%E1%BB%8F%20hoa%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20chi%E1%BB%81u%20ho%C3%A0ng%20h%C3%B4n%20%C3%AAm%20%C4%91%E1%BB%81m.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=63316",
-        "audio_url": "/static/audio/story_temp_scene_3_female.mp3"
+        "background": "Làng nhỏ trong đêm mưa bão, sau đó là cảnh làng an toàn với mọi người vui vẻ.",
+        "action": "Bác Búa To đánh thức dân làng, mọi người sơ tán và thoát khỏi trận lũ. Viên đá dịu đi như lời cảm ơn.",
+        "narration": "Tiếng thì thầm của viên đá bỗng trở nên gấp gáp, như một lời kêu cứu: 'Nước! Nước!'. Dù có chút sợ hãi, nhưng bác Búa To tin vào trực giác và lời cảnh báo bí ẩn ấy. Bác vội vã chạy ra ngoài, cầm theo viên đá phát sáng, đánh thức từng nhà dân làng, khẩn cấp cảnh báo về trận lũ sắp đến. Ban đầu, mọi người còn hoài nghi, nhưng khi thấy sự khẩn trương của bác và ánh sáng xanh kỳ lạ từ viên đá trên tay, họ bắt đầu sơ tán lên những nơi cao hơn. Ngay sau đó, một trận mưa lớn như trút nước đổ xuống, dòng suối nhỏ cạnh làng biến thành dòng nước lũ cuồn cuộn. Nhờ sự cảnh báo kịp thời của bác Búa To và viên đá thần kỳ, cả làng đã an toàn. Viên đá lúc này vẫn phát sáng lấp lánh, nhưng tiếng thì thầm đã dịu đi, như một lời cảm ơn chân thành, ấm áp.",
+        "image_prompt": "Fantasy art style. A strong, muscular blacksmith named Búa To, wearing a dark brown blacksmith's shirt, gray hair and mutton chop beard, a kind face with keen eyes, and a black leather apron, is urgently running through a small village at night, holding the glowing pale blue stone. He is waking up villagers, who are initially confused but then start to evacuate, looking concerned. In the next scene, a massive flood is raging through the village, but the villagers are safe on higher ground, looking relieved and grateful towards Búa To. The glowing stone is held by Búa To, still shining brightly, but with a softer, comforting glow. The overall atmosphere is one of relief and unity. 8k resolution, children book illustration style.",
+        "image_url": "https://image.pollinations.ai/prompt/Fantasy%20art%20style.%20A%20strong%2C%20muscular%20blacksmith%20named%20B%C3%BAa%20To%2C%20wearing%20a%20dark%20brown%20blacksmith%27s%20shirt%2C%20gray%20hair%20and%20mutton%20chop%20beard%2C%20a%20kind%20face%20with%20keen%20eyes%2C%20and%20a%20black%20leather%20apron%2C%20is%20urgently%20running%20through%20a%20small%20village%20at%20night%2C%20holding%20the%20glowing%20pale%20blue%20stone.%20He%20is%20waking%20up%20villagers%2C%20who%20are%20initially%20confused%20but%20then%20start%20to%20evacuate%2C%20looking%20concerned.%20In%20the%20next%20scene%2C%20a%20massive%20flood%20is%20raging%20through%20the%20village%2C%20but%20the%20villagers%20are%20safe%20on%20higher%20ground%2C%20looking%20relieved%20and%20grateful%20towards%20B%C3%BAa%20To.%20The%20glowing%20stone%20is%20held%20by%20B%C3%BAa%20To%2C%20still%20shining%20brightly%2C%20but%20with%20a%20softer%2C%20comforting%20glow.%20The%20overall%20atmosphere%20is%20one%20of%20relief%20and%20unity.%208k%20resolution%2C%20children%20book%20illustration%20style.%2C%20Epic%20magical%20fantasy%20art%20style%2C%20mythical%20creatures%2C%20mystical%20glowing%20magic%20effects%2C%20ethereal%20starry%20lighting%2C%20enchanted%20vibrant%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20art?width=800&height=500&nologo=true&seed=16236",
+        "audio_url": "/static/audio/story_e19173b6_scene_3_female_498802517caf5b1c.mp3"
       }
     ],
     "evaluation": {}
-  },
-  {
-    "id": "e584a8e3",
-    "created_at": "2026-09-07 20:48:37",
-    "user_input": "tạo một câu chuyện có một cậu bé tên shin đang tưới cây",
-    "age": "Lớp 5",
-    "style": "Cổ tích",
-    "title": "Hành Trình Thú Vị: tạo một câu chuyện có một...",
-    "theme": "Tình bạn và tinh thần giúp đỡ lẫn nhau",
-    "characters": [
-      {
-        "name": "Mèo Bông",
-        "appearance": "Chú mèo nhỏ lông trắng muốt, đôi mắt xanh ngọc bích lấp lánh, đeo chiếc nơ đỏ ở cổ"
-      },
-      {
-        "name": "Thỏ Ngọc",
-        "appearance": "Chú thỏ đôi tai dài đáng yêu, mang chiếc balo màu vàng nhỏ nhắn"
-      }
-    ],
-    "setting": "Khu rừng xanh thẫm xinh đẹp rộn rã tiếng chim hót",
-    "story_summary": "Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'tạo một câu chuyện có một cậu bé tên shin đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-    "moral": "Hãy luôn sẵn lòng mở lòng giúp đỡ bạn bè xung quanh.",
-    "storyboard": [
-      "Mèo Bông và Thỏ Ngọc gặp nhau ở bìa rừng và quyết định khởi hành.",
-      "Hai bạn gặp một thử thách nhỏ trên đường đi và cùng nhau vượt qua.",
-      "Cuối cùng cả hai tìm thấy niềm vui và trao nhau nụ cười ấm áp."
-    ],
-    "scenes": [
-      {
-        "scene_id": 1,
-        "description": "Giới thiệu nhân vật và khởi đầu buổi sáng tươi đẹp tại bìa rừng.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Khu rừng rực rỡ nắng mai với hoa thảm cỏ xanh mướt.",
-        "action": "Mèo Bông mỉm cười vẫy tay chào Thỏ Ngọc đang đeo chiếc balo vàng.",
-        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Hành Trình Thú Vị: tạo một câu chuyện có một...'. Hôm nay là một ngày nắng đẹp trời!",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat with blue eyes and red ribbon next to a cute bunny with yellow backpack.\nAction & Scene: Waving hands cheerfully at each other under bright morning sunlight.\nBackground: Beautiful enchanted forest with green grass and colorful blooming flowers.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20M%C3%A8o%20B%C3%B4ng%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20v%E1%BA%ABy%20tay%20ch%C3%A0o%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20%C4%91ang%20%C4%91eo%20chi%E1%BA%BFc%20balo%20v%C3%A0ng.%2C%20Khu%20r%E1%BB%ABng%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20mai%20v%E1%BB%9Bi%20hoa%20th%E1%BA%A3m%20c%E1%BB%8F%20xanh%20m%C6%B0%E1%BB%9Bt.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=78362",
-        "audio_url": "/static/audio/story_temp_scene_1_female.mp3"
-      },
-      {
-        "scene_id": 2,
-        "description": "Hai bạn cùng nhau đối mặt với thử thách và hỗ trợ lẫn nhau.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Cây cầu gỗ nhỏ bắc qua dòng stream trong veo.",
-        "action": "Thỏ Ngọc cẩn thận chìa tay dắt Mèo Bông qua dòng suối nhỏ.",
-        "narration": "Trên đường đi, cả hai cùng dắt tay nhau vượt qua dòng suối mát lành.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat holding hands with a cute bunny.\nAction & Scene: Crossing a small wooden bridge over a sparkling clear stream together carefully.\nBackground: Sunny forest stream with shiny pebbles and jumping butterflies.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20c%E1%BA%A9n%20th%E1%BA%ADn%20ch%C3%ACa%20tay%20d%E1%BA%AFt%20M%C3%A8o%20B%C3%B4ng%20qua%20d%C3%B2ng%20su%E1%BB%91i%20nh%E1%BB%8F.%2C%20C%C3%A2y%20c%E1%BA%A7u%20g%E1%BB%97%20nh%E1%BB%8F%20b%E1%BA%AFc%20qua%20d%C3%B2ng%20stream%20trong%20veo.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=97883",
-        "audio_url": "/static/audio/story_temp_scene_2_female.mp3"
-      },
-      {
-        "scene_id": 3,
-        "description": "Kết thúc hành trình vui vẻ và bài học ý nghĩa.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Đồi cỏ hoa rực rỡ nắng chiều hoàng hôn êm đềm.",
-        "action": "Hai bạn ngồi cạnh nhau ngắm hoàng hôn và mỉm cười hạnh phúc.",
-        "narration": "Hành trình khép lại thật êm đềm. Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'tạo một câu chuyện có một cậu bé tên shin đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat and cute bunny sitting side by side.\nAction & Scene: Watching beautiful warm sunset sky and smiling happily together.\nBackground: Grassy hill with soft golden sunset light and warm cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Hai%20b%E1%BA%A1n%20ng%E1%BB%93i%20c%E1%BA%A1nh%20nhau%20ng%E1%BA%AFm%20ho%C3%A0ng%20h%C3%B4n%20v%C3%A0%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20h%E1%BA%A1nh%20ph%C3%BAc.%2C%20%C4%90%E1%BB%93i%20c%E1%BB%8F%20hoa%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20chi%E1%BB%81u%20ho%C3%A0ng%20h%C3%B4n%20%C3%AAm%20%C4%91%E1%BB%81m.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=5056",
-        "audio_url": "/static/audio/story_temp_scene_3_female.mp3"
-      }
-    ],
-    "evaluation": {}
-  },
-  {
-    "id": "dad5d3d9",
-    "created_at": "2026-08-17 19:30:31",
-    "user_input": "một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây",
-    "age": "Lớp 1 - 2",
-    "style": "Cổ tích",
-    "title": "Hành Trình Thú Vị: một chú mèo nhỏ đang chạy...",
-    "theme": "Tình bạn và tinh thần giúp đỡ lẫn nhau",
-    "characters": [
-      {
-        "name": "Mèo Bông",
-        "appearance": "Chú mèo nhỏ lông trắng muốt, đôi mắt xanh ngọc bích lấp lánh, đeo chiếc nơ đỏ ở cổ"
-      },
-      {
-        "name": "Thỏ Ngọc",
-        "appearance": "Chú thỏ đôi tai dài đáng yêu, mang chiếc balo màu vàng nhỏ nhắn"
-      }
-    ],
-    "setting": "Khu rừng xanh thẫm xinh đẹp rộn rã tiếng chim hót",
-    "story_summary": "Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-    "moral": "Hãy luôn sẵn lòng mở lòng giúp đỡ bạn bè xung quanh.",
-    "storyboard": [
-      "Mèo Bông và Thỏ Ngọc gặp nhau ở bìa rừng và quyết định khởi hành.",
-      "Hai bạn gặp một thử thách nhỏ trên đường đi và cùng nhau vượt qua.",
-      "Cuối cùng cả hai tìm thấy niềm vui và trao nhau nụ cười ấm áp."
-    ],
-    "scenes": [
-      {
-        "scene_id": 1,
-        "description": "Giới thiệu nhân vật và khởi đầu buổi sáng tươi đẹp tại bìa rừng.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Khu rừng rực rỡ nắng mai với hoa thảm cỏ xanh mướt.",
-        "action": "Mèo Bông mỉm cười vẫy tay chào Thỏ Ngọc đang đeo chiếc balo vàng.",
-        "narration": "Chào mừng các bạn nhỏ đến với câu chuyện 'Hành Trình Thú Vị: một chú mèo nhỏ đang chạy...'. Hôm nay là một ngày nắng đẹp trời!",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat with blue eyes and red ribbon next to a cute bunny with yellow backpack.\nAction & Scene: Waving hands cheerfully at each other under bright morning sunlight.\nBackground: Beautiful enchanted forest with green grass and colorful blooming flowers.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20M%C3%A8o%20B%C3%B4ng%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20v%E1%BA%ABy%20tay%20ch%C3%A0o%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20%C4%91ang%20%C4%91eo%20chi%E1%BA%BFc%20balo%20v%C3%A0ng.%2C%20Khu%20r%E1%BB%ABng%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20mai%20v%E1%BB%9Bi%20hoa%20th%E1%BA%A3m%20c%E1%BB%8F%20xanh%20m%C6%B0%E1%BB%9Bt.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=82872"
-      },
-      {
-        "scene_id": 2,
-        "description": "Hai bạn cùng nhau đối mặt với thử thách và hỗ trợ lẫn nhau.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Cây cầu gỗ nhỏ bắc qua dòng stream trong veo.",
-        "action": "Thỏ Ngọc cẩn thận chìa tay dắt Mèo Bông qua dòng suối nhỏ.",
-        "narration": "Trên đường đi, cả hai cùng dắt tay nhau vượt qua dòng suối mát lành.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat holding hands with a cute bunny.\nAction & Scene: Crossing a small wooden bridge over a sparkling clear stream together carefully.\nBackground: Sunny forest stream with shiny pebbles and jumping butterflies.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%20c%E1%BA%A9n%20th%E1%BA%ADn%20ch%C3%ACa%20tay%20d%E1%BA%AFt%20M%C3%A8o%20B%C3%B4ng%20qua%20d%C3%B2ng%20su%E1%BB%91i%20nh%E1%BB%8F.%2C%20C%C3%A2y%20c%E1%BA%A7u%20g%E1%BB%97%20nh%E1%BB%8F%20b%E1%BA%AFc%20qua%20d%C3%B2ng%20stream%20trong%20veo.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=33292"
-      },
-      {
-        "scene_id": 3,
-        "description": "Kết thúc hành trình vui vẻ và bài học ý nghĩa.",
-        "characters": [
-          "Mèo Bông",
-          "Thỏ Ngọc"
-        ],
-        "background": "Đồi cỏ hoa rực rỡ nắng chiều hoàng hôn êm đềm.",
-        "action": "Hai bạn ngồi cạnh nhau ngắm hoàng hôn và mỉm cười hạnh phúc.",
-        "narration": "Hành trình khép lại thật êm đềm. Một ngày nọ, Mèo Bông và Thỏ Ngọc cùng nhau bước vào hành trình phiêu lưu. Qua ý tưởng 'một chú mèo nhỏ đang chạy lon ton, mẹ đang nấu ăn, chị đang làm bài tập, em đang xem tivi, bố đang tưới cây', hai bạn nhỏ đã cùng nhau học được bài học sẻ chia quý giá.",
-        "image_prompt": "\nDigital illustration for a children's storybook, cute cartoon style, highly detailed, vivid pastel colors, Disney/Pixar animation feel.\nCharacters: Cute white cat and cute bunny sitting side by side.\nAction & Scene: Watching beautiful warm sunset sky and smiling happily together.\nBackground: Grassy hill with soft golden sunset light and warm cozy atmosphere.\nFriendly for primary school kids, 8k resolution look, warm lighting.\n",
-        "image_url": "https://image.pollinations.ai/prompt/Vivid%203D%20Disney%20Pixar%20animated%20movie%20scene%2C%20cute%20character%20M%C3%A8o%20B%C3%B4ng%2C%20Th%E1%BB%8F%20Ng%E1%BB%8Dc%2C%20Hai%20b%E1%BA%A1n%20ng%E1%BB%93i%20c%E1%BA%A1nh%20nhau%20ng%E1%BA%AFm%20ho%C3%A0ng%20h%C3%B4n%20v%C3%A0%20m%E1%BB%89m%20c%C6%B0%E1%BB%9Di%20h%E1%BA%A1nh%20ph%C3%BAc.%2C%20%C4%90%E1%BB%93i%20c%E1%BB%8F%20hoa%20r%E1%BB%B1c%20r%E1%BB%A1%20n%E1%BA%AFng%20chi%E1%BB%81u%20ho%C3%A0ng%20h%C3%B4n%20%C3%AAm%20%C4%91%E1%BB%81m.%2C%20vibrant%20pastel%20colors%2C%20masterpiece%2C%208k%20resolution%2C%20children%20storybook%20illustration?width=800&height=500&nologo=true&seed=61172"
-      }
-    ],
-    "evaluation": {
-      "approved": true,
-      "feedback": "Đã phê duyệt mặc định do không thể kết nối Evaluator API.",
-      "score": 8
-    }
   }
 ]

@@ -27,8 +27,11 @@ async def director_node(state: StoryState) -> Dict[str, Any]:
 async def scene_planner_node(state: StoryState) -> Dict[str, Any]:
     logger.info("--> [LangGraph] Node: Scene Planner đang phân chia thành các cảnh chi tiết...")
     storyboard = state.get("storyboard", {})
+    user_input = state.get("user_input", "")
+    age_group = state.get("age_group", "Lớp 1 - 2")
+    art_style = state.get("art_style", "Hoạt hình")
 
-    scenes = await plan_scenes(storyboard)
+    scenes = await plan_scenes(storyboard, user_input=user_input, age_group=age_group, art_style=art_style)
     return {
         "scenes": scenes,
         "status": "scene_planner_completed"

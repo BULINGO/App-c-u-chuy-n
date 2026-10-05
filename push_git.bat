@@ -5,8 +5,9 @@ echo   DANG PUSH CODE LEN GITHUB: App-c-u-chuy-n
 echo ===================================================
 cd /d "d:\APP AI"
 
-"C:\Program Files\Git\cmd\git.exe" remote set-url origin https://github.com/BULINGO/App-c-u-chuy-n.git
-"C:\Program Files\Git\cmd\git.exe" push -u origin main
+"C:\Program Files\Git\cmd\git.exe" add .
+"C:\Program Files\Git\cmd\git.exe" commit -m "Update and configure for Vercel deployment"
+"C:\Program Files\Git\cmd\git.exe" push origin main
 
 echo.
 echo ===================================================

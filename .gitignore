@@ -31,5 +31,9 @@ data/audio/*.wav
 .DS_Store
 Thumbs.db
 
-# Scratch files
+# Scratch & large files
 backend/chay
+*.zip
+*.docx
+*.png
+test_hoaimy.mp3

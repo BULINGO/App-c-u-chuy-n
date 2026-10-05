@@ -43,7 +43,10 @@ async def get_sp_du_thi():
     return {"error": "File SP dự thi.html không tồn tại"}
 
 # Phục vụ thư mục âm thanh static (cho giọng đọc TTS)
-audio_dir = os.path.join("data", "audio")
+if os.environ.get("VERCEL"):
+    audio_dir = "/tmp/data/audio"
+else:
+    audio_dir = os.path.join("data", "audio")
 os.makedirs(audio_dir, exist_ok=True)
 app.mount("/static/audio", StaticFiles(directory=audio_dir), name="audio_static")
 

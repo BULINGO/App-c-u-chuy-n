@@ -1,25 +1,34 @@
 import logging
 import asyncio
+import random
+import urllib.parse
 from typing import List, Dict, Any
-from backend.services.openrouter import openrouter_service
 
 logger = logging.getLogger("image_generator_module")
 
-import random
-import urllib.parse
-
 def generate_pollinations_image_url(scene: Dict[str, Any], style: str = "Hoạt hình") -> str:
     """
-    Sinh URL ảnh AI nghệ thuật thực tế sinh động 100% từ Pollinations AI Engine.
-    Tự động dựng prompt chi tiết mô tả rõ nhân vật, hành động và bối cảnh.
+    Sinh URL ảnh AI nghệ thuật thực tế sinh động 100% từ Pollinations AI Engine (Flux/SD).
+    Tự động kết hợp prompt chi tiết từ Scene Planner để đảm bảo tính nhất quán hình ảnh nhân vật và bối cảnh.
     """
-    action = scene.get("action") or scene.get("description") or "doing fun activity"
-    background = scene.get("background") or "sunny outdoor background"
-    chars = scene.get("characters") or ["cute character"]
-    char_str = ", ".join(chars) if isinstance(chars, list) else str(chars)
+    image_prompt = scene.get("image_prompt", "").strip()
+    
+    style_keyword = "3D Disney Pixar animated cute 3d illustration, vivid pastel colors"
+    if "dễ thương" in style.lower():
+        style_keyword = "Super cute anime watercolor storybook illustration, adorable characters, soft pastel colors"
+    elif "cổ tích" in style.lower():
+        style_keyword = "Magical fairy tale storybook illustration, enchanted scenery, glowing sparkles"
+    elif "kỳ ảo" in style.lower() or "fantasy" in style.lower():
+        style_keyword = "Epic magical fantasy art style, mythical creatures, mystical glowing magic effects, ethereal starry lighting, enchanted vibrant colors"
 
-    # Prompt tiếng Anh chuẩn cho AI Image Generator (Flux/Stable Diffusion)
-    prompt = f"Vivid 3D Disney Pixar animated movie scene, cute character {char_str}, {action}, {background}, vibrant pastel colors, masterpiece, 8k resolution, children storybook illustration"
+    if image_prompt and len(image_prompt) > 20 and not image_prompt.startswith("Cute animation"):
+        prompt = f"{image_prompt}, {style_keyword}, masterpiece, 8k resolution, children storybook art"
+    else:
+        action = scene.get("action") or scene.get("description") or "doing fun activity"
+        background = scene.get("background") or "sunny outdoor background"
+        chars = scene.get("characters") or ["cute character"]
+        char_str = ", ".join(chars) if isinstance(chars, list) else str(chars)
+        prompt = f"{style_keyword}, cute characters {char_str}, {action}, {background}, masterpiece, 8k resolution, children storybook illustration"
 
     clean_prompt = prompt.replace("\n", " ").strip()
     encoded_prompt = urllib.parse.quote(clean_prompt)
@@ -32,37 +41,18 @@ async def generate_scene_images(
     style: str = "Hoạt hình"
 ) -> List[Dict[str, Any]]:
     """
-    Model Tạo hình ảnh: Sinh hình ảnh AI thật nghệ thuật minh họa cho từng cảnh.
+    Model Tạo hình ảnh: Sinh hình ảnh AI minh họa sắc nét và nhất quán cho từng cảnh.
     """
     updated_scenes = []
-    prev_image_url = None
 
     for idx, scene in enumerate(scenes):
         scene_id = scene.get("scene_id", idx + 1)
-        image_prompt = scene.get("image_prompt", f"Illustration for scene {scene_id}")
-
         logger.info(f"Đang sinh hình ảnh AI nghệ thuật cho Cảnh {scene_id}...")
 
-        img_url = None
-        try:
-            if openrouter_service.is_configured():
-                img_url = await openrouter_service.generate_image(
-                    image_prompt=image_prompt,
-                    style=style,
-                    ref_image_url=prev_image_url
-                )
-                if not img_url or "digital illustration for a" in img_url.lower() or "placehold.co" in img_url.lower():
-                    img_url = generate_pollinations_image_url(scene, style)
-            else:
-                img_url = generate_pollinations_image_url(scene, style)
-        except Exception as e:
-            logger.error(f"Lỗi khi gọi OpenRouter Image API: {str(e)}. Chuyển sang Pollinations AI sinh ảnh thật.")
-            img_url = generate_pollinations_image_url(scene, style)
-
+        img_url = generate_pollinations_image_url(scene, style)
         if not img_url:
             img_url = get_svg_placeholder(scene, style)
 
-        prev_image_url = img_url
         scene_copy = dict(scene)
         scene_copy["image_url"] = img_url
         updated_scenes.append(scene_copy)
@@ -73,18 +63,15 @@ def get_svg_placeholder(scene: Dict[str, Any], style: str = "Hoạt hình") -> s
     """
     Sinh Data URI ảnh SVG minh họa hoạt hình trực quan, đẹp mắt, khớp từng bối cảnh và hành động câu chuyện.
     """
-    import urllib.parse
     scene_id = scene.get("scene_id", 1)
     action = scene.get("action") or scene.get("description") or "Diễn biến câu chuyện"
     bg_text = scene.get("background") or "Bối cảnh tự nhiên"
     chars = scene.get("characters") or ["Nhân vật"]
     char_str = ", ".join(chars) if isinstance(chars, list) else str(chars)
 
-    # Rút gọn text để hiển thị vừa vặn trên ảnh minh họa
     clean_action = (action[:45] + '...') if len(action) > 45 else action
     clean_bg = (bg_text[:35] + '...') if len(bg_text) > 35 else bg_text
 
-    # Chọn bảng màu và biểu tượng theo từng cảnh
     themes = [
         {"top": "#38bdf8", "bottom": "#4ade80", "accent": "#facc15", "icon": "🐱 🐰 🌲", "title": "Bắt đầu hành trình"},
         {"top": "#fb923c", "bottom": "#f43f5e", "accent": "#fef08a", "icon": "🌉 🌊 🐾", "title": "Cùng vượt thử thách"},
@@ -106,34 +93,25 @@ def get_svg_placeholder(scene: Dict[str, Any], style: str = "Hoạt hình") -> s
         </filter>
       </defs>
 
-      <!-- Nền Gradient -->
       <rect width="600" height="400" fill="url(#bgGrad{scene_id})" rx="16"/>
-
-      <!-- Họa tiết bóng mây / mặt trời -->
       <circle cx="500" cy="70" r="45" fill="{theme['accent']}" opacity="0.8"/>
       <circle cx="100" cy="320" r="90" fill="white" opacity="0.15"/>
       <circle cx="520" cy="340" r="110" fill="white" opacity="0.15"/>
 
-      <!-- Khung thẻ minh họa trung tâm -->
       <rect x="40" y="50" width="520" height="300" rx="16" fill="white" opacity="0.92" filter="url(#shadow)"/>
 
-      <!-- Tiêu đề Cảnh -->
       <rect x="60" y="70" width="120" height="32" rx="16" fill="{theme['top']}"/>
       <text x="120" y="91" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CẢNH {scene_id}</text>
 
-      <!-- Icons bối cảnh -->
       <text x="300" y="150" font-family="sans-serif" font-size="52" text-anchor="middle">{theme['icon']}</text>
 
-      <!-- Thông tin bối cảnh & Hành động bằng Tiếng Việt -->
       <text x="300" y="200" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">📍 {clean_bg}</text>
       <text x="300" y="235" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" fill="#334155" text-anchor="middle">🎭 {clean_action}</text>
       <text x="300" y="270" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">👥 Nhân vật: {char_str}</text>
 
-      <!-- Chân trang minh họa -->
       <rect x="40" y="310" width="520" height="40" rx="0" fill="#f8fafc" style="border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;"/>
       <text x="300" y="335" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#0284c7" text-anchor="middle">✨ Tranh minh họa trực quan phong cách {style} ✨</text>
     </svg>"""
 
     encoded_svg = urllib.parse.quote(svg)
     return f"data:image/svg+xml;utf8,{encoded_svg}"
-

@@ -16,7 +16,7 @@
         <nav>
             <a id="navHome" class="active" onclick="showCreateSection()">Trang chủ</a>
             <a id="navLibrary" onclick="showLibrarySection()">Thư viện truyện</a>
-            <a id="navMyStories" onclick="showLibrarySection()">Truyện của tôi</a>
+            <a id="navMyStories" onclick="showMyStoriesSection()">Truyện của tôi</a>
         </nav>
     </header>
 
@@ -36,16 +36,16 @@
                 <p>Nhập ý tưởng và để AI Agentic điều phối kịch bản & tạo hình ảnh.</p>
             </div>
 
-            <div class="card" onclick="scrollToCreate()">
-                <div class="icon">📖</div>
-                <h3>Kể câu chuyện</h3>
-                <p>Nhập câu chuyện có sẵn và biến nó thành câu chuyện trực quan.</p>
-            </div>
-
             <div class="card" onclick="showLibrarySection()">
                 <div class="icon">🎨</div>
                 <h3>Thư viện truyện</h3>
                 <p>Xem toàn bộ những câu chuyện đã được AI sáng tạo.</p>
+            </div>
+
+            <div class="card" onclick="showMyStoriesSection()">
+                <div class="icon">📖</div>
+                <h3>Truyện của tôi</h3>
+                <p>Xem toàn bộ những câu chuyện của bạn.</p>
             </div>
 
         </div>
@@ -55,11 +55,32 @@
 
             <h2>✨ Tạo câu chuyện</h2>
 
-            <p style="margin-bottom: 10px; color: #475569;">
-                Hãy nhập ý tưởng hoặc nội dung câu chuyện:
+            <p style="margin-bottom: 8px; color: #475569; font-size: 14px;">
+                Nhập ý tưởng hoặc phân chia sẵn từng cảnh theo ý bạn:
             </p>
 
-            <textarea id="storyInput" placeholder="Ví dụ: Một chú mèo nhỏ dũng cảm giúp đỡ bạn bè vượt qua dòng suối nhỏ trong khu rừng..."></textarea>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
+                <button type="button" onclick="fillTemplate('scenes')" style="font-size: 12px; padding: 5px 10px; border-radius: 6px; border: 1px dashed #2878d4; background: #eff6ff; color: #1d4ed8; cursor: pointer;">
+                    📋 Mẫu 3 Phân Cảnh (Cảnh 1, 2, 3)
+                </button>
+                <button type="button" onclick="fillTemplate('fantasy')" style="font-size: 12px; padding: 5px 10px; border-radius: 6px; border: 1px dashed #a855f7; background: #faf5ff; color: #7e22ce; cursor: pointer;">
+                    ✨ Mẫu Kỳ ảo (Xứ sở phép thuật)
+                </button>
+                <button type="button" onclick="fillTemplate('friendship')" style="font-size: 12px; padding: 5px 10px; border-radius: 6px; border: 1px dashed #10b981; background: #ecfdf5; color: #047857; cursor: pointer;">
+                    🤝 Mẫu Tình bạn Rùa & Thỏ
+                </button>
+                <button type="button" onclick="fillTemplate('adventure')" style="font-size: 12px; padding: 5px 10px; border-radius: 6px; border: 1px dashed #8b5cf6; background: #f5f3ff; color: #6d28d9; cursor: pointer;">
+                    🐱 Mẫu Bé Na & Mèo Miu
+                </button>
+            </div>
+
+            <textarea id="storyInput" rows="4" placeholder="Ví dụ nhập theo phân cảnh:
+Cảnh 1: Bé Na tìm thấy chú mèo con bị ướt mưa dưới gốc cây.
+Cảnh 2: Bé Na mang mèo về sưởi ấm và cho uống sữa nóng.
+Cảnh 3: Mèo con khỏe mạnh và cùng Na chơi cuộn len thật vui."></textarea>
+            <div style="font-size: 12px; color: #64748b; margin-top: 4px; margin-bottom: 12px;">
+                💡 <i>Hệ thống AI sẽ giữ trọn vẹn 100% cốt truyện, thống nhất bối cảnh và kết nối chặt chẽ cả 3 phân cảnh.</i>
+            </div>
 
             <div class="options">
 
@@ -73,6 +94,7 @@
                     <option>Hoạt hình</option>
                     <option>Dễ thương</option>
                     <option>Cổ tích</option>
+                    <option>Kỳ ảo</option>
                 </select>
 
                 <select id="voice">
@@ -82,6 +104,13 @@
 
             </div>
 
+            <!-- Tùy chọn Lưu vào Truyện của tôi -->
+            <div style="margin: 15px 0 20px 0;">
+                <label style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #334155; cursor: pointer; user-select: none;">
+                    <input type="checkbox" id="storyIsPrivate" style="width: 16px; height: 16px; cursor: pointer;">
+                    Lưu vào Truyện của tôi
+                </label>
+            </div>
 
             <button class="btn-submit" onclick="createStory()">✨ Tạo câu chuyện với AI Agentic</button>
 
@@ -106,7 +135,7 @@
 
         </div>
 
-        <!-- Khu vực 2: Thư viện truyện (Lịch sử câu chuyện đã lưu) -->
+        <!-- Khu vực 2: Thư viện truyện -->
         <div class="library-section" id="librarySection" style="display: none;">
             <h2>
                 <span>🎨 Thư viện câu chuyện đã tạo</span>
@@ -117,11 +146,53 @@
 
             <div id="libraryContent">
                 <div class="library-grid" id="libraryGrid">
-                    <!-- Danh sách thẻ truyện sẽ được load bằng JS -->
+                    <!-- Danh sách thẻ truyện công khai sẽ được load bằng JS -->
                 </div>
             </div>
         </div>
 
+        <!-- Khu vực 3: Truyện của tôi (Có mật khẩu) -->
+        <div class="library-section" id="myStoriesSection" style="display: none;">
+            <h2>
+                <span>Truyện của tôi</span>
+                <div>
+                    <button onclick="lockMyStories()" style="font-size: 13px; padding: 6px 12px; border-radius: 6px; background: #fee2e2; color: #b91c1c; border: none; cursor: pointer; margin-right: 8px;">
+                        Khóa lại
+                    </button>
+                    <button onclick="loadMyStories()" style="font-size: 13px; padding: 6px 12px; border-radius: 6px; background: #e2e8f0; color: #334155; border: none; cursor: pointer;">
+                        🔄 Làm mới
+                    </button>
+                </div>
+            </h2>
+
+            <div id="myStoriesContent">
+                <div class="library-grid" id="myStoriesGrid">
+                    <!-- Danh sách truyện của tôi sẽ được load bằng JS -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MODAL NHẬP MẬT KHẨU TRUYỆN CỦA TÔI -->
+    <div id="securityModal" class="modal-overlay" style="display: none;">
+        <div class="modal-box">
+            <h3>Truyện của tôi</h3>
+            <p style="margin-bottom: 15px; color: #64748b; font-size: 14px;">Vui lòng nhập mật khẩu để mở:</p>
+
+            <div class="modal-form">
+                <div class="input-group">
+                    <input type="password" id="securityPasswordInput" placeholder="Nhập mật khẩu..." autocomplete="current-password">
+                </div>
+
+                <div id="securityModalError" class="modal-error-msg" style="display: none;"></div>
+
+                <div class="modal-btn-group">
+                    <button class="btn-modal-cancel" onclick="closeSecurityModal()">Hủy</button>
+                    <button class="btn-modal-submit" id="btnSecuritySubmit" onclick="submitSecurityModal()">Mở</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
